@@ -241,12 +241,33 @@ def extract_steps(value: str) -> list[str]:
     if not value:
         return []
     value = normalize_extracted_text(value)
+    value = re.split(r"\b(?:approximate\s+)?macros?\b|\bnutrition\b", value, maxsplit=1, flags=re.IGNORECASE)[0]
     value = normalize_text(value.replace("\x7f", " ").replace("■", " "))
-    parts = re.split(r"\s+(?=\d+[\.\)]\s+)", value)
+    heading_patterns = [
+        r"buns?\s*/\s*rolls?",
+        r"flatbread\s*/\s*pita\s+adaptation",
+        r"base\s+method",
+        r"method",
+        r"instructions?",
+        r"directions?",
+        r"tips?\s*&\s*variations?",
+        r"variations?",
+        r"notes?",
+    ]
+    for pattern in heading_patterns:
+        value = re.sub(rf"(?i)\b({pattern})\b", r"\n\1\n", value)
+    value = re.sub(r"\s+(?=\d+[\.\)]?\s+[A-Z])", "\n", value)
+    value = re.sub(r"\s+[–—]\s+(?=[A-Z])", "\n", value)
+    value = re.sub(
+        r"\s+(?=(?:Substitution Options|Saffron-Pistachio|Thandai|Mocha|Chocolate|Cardamom|Storage|Bake instead)\b)",
+        "\n",
+        value,
+    )
+    parts = re.split(r"\n+|\s+(?=\d+[\.\)]\s+)", value)
     steps = []
     for part in parts:
-        step = re.sub(r"^\d+[\.\)]\s*", "", part).strip()
-        if step:
+        step = re.sub(r"^\d+[\.\)]?\s*", "", part).strip(" -:;")
+        if step and step not in {"-", "–", "—"}:
             steps.append(step)
     return steps or [value]
 
