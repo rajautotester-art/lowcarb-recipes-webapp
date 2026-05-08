@@ -13,6 +13,13 @@ function asList(value) {
   return [value]
 }
 
+function cleanDisplayText(value) {
+  return String(value || '')
+    .replace(/^\s*\d+[\.)]\s*/, '')
+    .replace(/\s+/g, ' ')
+    .trim()
+}
+
 function RecipeList({ recipes, selectedRecipe, onSelect }) {
   if (!recipes.length) {
     return <p className="empty">Search results will appear here.</p>
@@ -86,9 +93,10 @@ function RecipeDetail({ recipe }) {
     )
   }
 
-  const ingredients = asList(recipe.ingredients)
-  const methodSteps = asList(recipe.method_steps)
+  const ingredients = asList(recipe.ingredients).map(cleanDisplayText).filter(Boolean)
+  const methodSteps = asList(recipe.method_steps).map(cleanDisplayText).filter(Boolean)
   const tags = asList(recipe.tags)
+  const notes = cleanDisplayText(recipe.notes)
 
   return (
     <article className="recipe-detail">
@@ -99,7 +107,7 @@ function RecipeDetail({ recipe }) {
         </div>
       </div>
 
-      {recipe.macros && <p className="macros">{recipe.macros}</p>}
+      {recipe.macros && <p className="macros">{cleanDisplayText(recipe.macros)}</p>}
 
       <section>
         <h3>Ingredients</h3>
@@ -123,14 +131,14 @@ function RecipeDetail({ recipe }) {
             ))}
           </ol>
         ) : (
-          <p>{recipe.notes}</p>
+          notes ? <p className="notes-text">{notes}</p> : <p className="empty">No method parsed yet.</p>
         )}
       </section>
 
-      {recipe.notes && methodSteps.length === 0 && (
+      {notes && methodSteps.length === 0 && (
         <section>
           <h3>Notes</h3>
-          <p>{recipe.notes}</p>
+          <p className="notes-text">{notes}</p>
         </section>
       )}
 

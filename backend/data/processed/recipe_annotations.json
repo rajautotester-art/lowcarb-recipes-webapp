@@ -1,5 +1,58 @@
 [
   {
+    "recipe_id": "r_4cda9c3a3f",
+    "recipe_name": "Cheesy Low-Carb Burger Buns (Eggless, Yeast, Yogurt)",
+    "source_file": "C:\\lowcarb-recipe-chatbot\\backend\\data\\raw\\pdf\\Cheesy_LowCarb_Burger_Buns.pdf",
+    "tags": [
+      "bread",
+      "cake",
+      "eggless",
+      "low carb",
+      "protein"
+    ],
+    "bot_keywords": [
+      "bread",
+      "cake",
+      "cheesy low-carb burger buns (eggless",
+      "eggless",
+      "increase psyllium slightly next batch.",
+      "increase psyllium slightly next batch. cheesy low-carb burger buns (eggless",
+      "low carb",
+      "protein",
+      "yeast",
+      "yogurt) cheesy low-carb burger buns (eggless",
+      "yogurt) dry ingredients almond flour \u2013 180 g pea protein isolate \u2013 50\u201355 g bamboo fiber \u2013 20\u201322 g psyllium husk powder \u2013 18 g baking powder \u2013 8 g (2 tsp) instant yeast \u2013 10 g (2.5 tsp) salt \u2013 5 g sweetener \u2013 5\u20138 g (optional) wet ingredients warm water (50\u201355\u00b0c) \u2013 360\u2013370 ml greek yogurt \u2013 90 g olive/avocado oil \u2013 30 ml (2 tbsp) apple cider vinegar \u2013 1 tbsp cheese low-moisture mozzarella \u2013 50 g (grated) activate yeast in warm water with sweetener (5\u20137 min). mix dry ingredients. add wet ingredients and mix 3\u20134 min. fold in cheese gently. rest dough 12\u201315 min. divide into 8 buns and shape gently. proof 30\u201335 min (covered). bake at 180\u00b0c (350\u00b0f) for 25\u201330 min. cool completely before slicing. tips use wet hands to shape for smooth surface. do not over-compress dough. sprinkle cheese on top before baking for crust. if buns spread",
+      "yogurt) dry ingredients almond flour \u2013 180 g pea protein isolate \u2013 50\u201355 g bamboo fiber \u2013 20\u201322 g psyllium husk powder \u2013 18 g baking powder \u2013 8 g (2 tsp) instant yeast \u2013 10 g (2.5 tsp) salt \u2013 5 g sweetener \u2013 5\u20138 g (optional) wet ingredients warm water (50\u201355\u00b0c) \u2013 360\u2013370 ml greek yogurt \u2013 90 g olive/avocado oil \u2013 30 ml (2 tbsp) apple cider vinegar \u2013 1 tbsp cheese low-moisture mozzarella \u2013 50 g (grated) method activate yeast in warm water with sweetener (5\u20137 min). mix dry ingredients. add wet ingredients and mix 3\u20134 min. fold in cheese gently. rest dough 12\u201315 min. divide into 8 buns and shape gently. proof 30\u201335 min (covered). bake at 180\u00b0c (350\u00b0f) for 25\u201330 min. cool completely before slicing. tips use wet hands to shape for smooth surface. do not over-compress dough. sprinkle cheese on top before baking for crust. if buns spread"
+    ]
+  },
+  {
+    "recipe_id": "r_ee1d64e71a",
+    "recipe_name": "Eggless Lentil Bread (50/50 Masoor + Moong)",
+    "source_file": "C:\\lowcarb-recipe-chatbot\\backend\\data\\raw\\pdf\\Eggless_Lentil_Bread_50_50_Masoor_Moong.pdf",
+    "tags": [
+      "bread",
+      "eggless",
+      "low carb"
+    ],
+    "bot_keywords": [
+      "best slicing after full cooling. eggless lentil bread (50/50 masoor + moong) ingredients masoor dal (dry) \u2013 100 g moong dal (dry) \u2013 100 g flaxmeal \u2013 2 tbsp warm water \u2013 6 tbsp water \u2013 120 ml to start olive oil \u2013 1 tbsp salt \u2013 3/4 to 1 tsp dried garlic \u2013 1 tsp chopped dill \u2013 2 tbsp psyllium husk \u2013 2 tbsp baking powder \u2013 1 1/2 tsp mozzarella \u2013 50 g cheddar \u2013 50 g sesame seeds \u2013 30 g + extra for topping method 1. soak masoor and moong 6\u20138 hours or overnight. drain and rinse well. 2. mix flaxmeal + warm water. rest 10 minutes. 3. blend soaked lentils with 120 ml water and olive oil until mostly smooth. 4. transfer to bowl. add flax gel",
+      "bread",
+      "cheeses",
+      "dill",
+      "eggless",
+      "eggless lentil bread (50/50 masoor + moong) masoor dal (dry) \u2013 100 g moong dal (dry) \u2013 100 g flaxmeal \u2013 2 tbsp warm water \u2013 6 tbsp water \u2013 120 ml to start olive oil \u2013 1 tbsp salt \u2013 3/4 to 1 tsp dried garlic \u2013 1 tsp chopped dill \u2013 2 tbsp psyllium husk \u2013 2 tbsp baking powder \u2013 1 1/2 tsp mozzarella \u2013 50 g cheddar \u2013 50 g sesame seeds \u2013 30 g + extra for topping 1. soak masoor and moong 6\u20138 hours or overnight. drain and rinse well. 2. mix flaxmeal + warm water. rest 10 minutes. 3. blend soaked lentils with 120 ml water and olive oil until mostly smooth. 4. transfer to bowl. add flax gel",
+      "garlic",
+      "if too dense next time: use 2 tsp baking powder.",
+      "if too dry: add 1\u20132 tbsp yogurt next time.",
+      "if too wet: reduce water slightly.",
+      "low carb",
+      "psyllium",
+      "salt",
+      "sesame seeds. 5. mix well. fold in baking powder last. 6. spread into greased or lined loaf pan. smooth top. optional shallow slit. sprinkle sesame. 7. rest 5 minutes. 8. bake at 350\u00b0f / 180\u00b0c for 45\u201355 minutes. 9. cool 10 minutes in pan",
+      "then fully on rack before slicing. tips"
+    ]
+  },
+  {
     "recipe_id": "r_422564009c",
     "recipe_name": "Eggless Low Carb Keto Buns & Flatbread / Pita",
     "source_file": "C:\\lowcarb-recipe-chatbot\\backend\\data\\raw\\pdf\\Eggless_Low_Carb_Keto_Buns_and_Pita.pdf",
@@ -161,6 +214,97 @@
     ]
   },
   {
+    "recipe_id": "r_e17e9c853d",
+    "recipe_name": "Eggless Moderate Low-Carb Lentil Focaccia",
+    "source_file": "C:\\lowcarb-recipe-chatbot\\backend\\data\\raw\\pdf\\Lentil_Focaccia_Recipe.pdf",
+    "tags": [
+      "eggless",
+      "low carb",
+      "protein"
+    ],
+    "bot_keywords": [
+      "1 tbsp psyllium husk powder (8g)",
+      "1 tsp apple cider vinegar",
+      "1 tsp baking powder",
+      "1 tsp oregano",
+      "1 tsp sesame seeds",
+      "1/2 tsp garlic powder",
+      "190g dry split yellow moong dal or red lentils (masoor dal)",
+      "2 tbsp flaxmeal (14g)",
+      "2 tbsp olive oil toppings",
+      "25g grated parmesan",
+      "30g pea protein isolate",
+      "45g thick greek yogurt (about 3 tbsp) flavor",
+      "6 tbsp warm water structure + protein",
+      "6\u20138 olives sliced",
+      "eggless",
+      "eggless moderate low-carb lentil focaccia lentil base",
+      "low carb",
+      "optional chili flakes",
+      "or 95g each for mixed version",
+      "protein",
+      "rosemary",
+      "salt to taste",
+      "water for soaking egg replacement"
+    ]
+  },
+  {
+    "recipe_id": "r_c670e97897",
+    "recipe_name": "Final Sandwich Loaf V3",
+    "source_file": "C:\\lowcarb-recipe-chatbot\\backend\\data\\raw\\pdf\\Final_Sandwich_Loaf_V3.pdf",
+    "tags": [
+      "bread",
+      "cake",
+      "low carb",
+      "protein"
+    ],
+    "bot_keywords": [
+      "12 slices dry ingredients almond flour \u2014 180 g pea protein isolate \u2014 58 g bamboo fiber \u2014 20 g psyllium husk powder \u2014 18 g baking powder \u2014 8 g instant yeast \u2014 10 g salt \u2014 6 g sweetener \u2014 5 g optional wet ingredients warm water \u2014 365 ml greek yogurt \u2014 85 g oil \u2014 35 ml apple cider vinegar \u2014 15 ml 1. activate yeast in warm water 5 min. 2. mix dry ingredients. 3. add wet ingredients and mix 4 min. 4. rest dough 10 min. 5. transfer to lined loaf pan. proofing final sandwich loaf v3 refined for even crumb",
+      "12 slices dry ingredients almond flour \u2014 180 g pea protein isolate \u2014 58 g bamboo fiber \u2014 20 g psyllium husk powder \u2014 18 g baking powder \u2014 8 g instant yeast \u2014 10 g salt \u2014 6 g sweetener \u2014 5 g optional wet ingredients warm water \u2014 365 ml greek yogurt \u2014 85 g oil \u2014 35 ml apple cider vinegar \u2014 15 ml method 1. activate yeast in warm water 5 min. 2. mix dry ingredients. 3. add wet ingredients and mix 4 min. 4. rest dough 10 min. 5. transfer to lined loaf pan. proofing oven light on: 16\u201318 min room temp: 22\u201325 min slight puff only. bake 340\u00b0f for 20 min. then 350\u00b0f for 35\u201340 min. tent foil if needed. cooling 15 min in pan",
+      "12 slices.",
+      "bread",
+      "cake",
+      "even crumb",
+      "final sandwich loaf v3 refined for even crumb",
+      "good toast",
+      "low carb",
+      "no sink",
+      "protein",
+      "then rack cool 3 hours. expected result less center sink"
+    ]
+  },
+  {
+    "recipe_id": "r_06e11866f8",
+    "recipe_name": "High-Protein Eggless Keto Sandwich Loaf",
+    "source_file": "C:\\lowcarb-recipe-chatbot\\backend\\data\\raw\\pdf\\High_Protein_Eggless_Keto_Sandwich_Loaf.pdf",
+    "tags": [
+      "bread",
+      "eggless",
+      "low carb",
+      "protein"
+    ],
+    "bot_keywords": [
+      "1 1/2 cups (150g) fine almond flour",
+      "1 1/2 tsp instant yeast",
+      "1 3/4 cups warm water (105\u2013110\u00b0f)",
+      "1 tsp apple cider vinegar",
+      "1 tsp baking powder",
+      "1/2 tsp monk fruit or stevia (for yeast activation)",
+      "1/4 cup (25g) whole psyllium husk",
+      "1/4 cup (30g) coconut flour",
+      "2 tbsp (16g) besan (optional but recommended)",
+      "2 tbsp greek yogurt (optional for softness) 1 high-protein eggless keto sandwich loaf ingredients (standard 8.5 x 4.5 inch loaf pan)",
+      "2 tbsp olive oil",
+      "3 tbsp (21g) flaxmeal",
+      "3/4 tsp salt",
+      "bread",
+      "eggless",
+      "high-protein eggless keto sandwich loaf (standard 8.5 x 4.5 inch loaf pan)",
+      "low carb",
+      "protein"
+    ]
+  },
+  {
     "recipe_id": "r_fbb4281ebf",
     "recipe_name": "Low-Carb Cheesy Garlic Bread (Egg-Free)",
     "source_file": "C:\\lowcarb-recipe-chatbot\\backend\\data\\raw\\pdf\\Low-Carb_Cheesy_Garlic_Bread_(Egg-Free).pdf",
@@ -191,6 +335,123 @@
       "\u00bd cup almond flour",
       "\u00bd tsp dried oregano",
       "\u00bd tsp garlic powder"
+    ]
+  },
+  {
+    "recipe_id": "r_f37ef3af19",
+    "recipe_name": "Low-Carb Eggless Bagel Collection (Greek Yogurt-Based)",
+    "source_file": "C:\\lowcarb-recipe-chatbot\\backend\\data\\raw\\pdf\\Low-Carb_Eggless_Bagel_Collection.pdf",
+    "tags": [
+      "eggless",
+      "protein"
+    ],
+    "bot_keywords": [
+      "1 tbsp chia seeds",
+      "1 tbsp poppy seeds",
+      "1 tbsp sweetener",
+      "1 tsp cinnamon",
+      "1-2 tsp lemon juice",
+      "1/3 cup blueberries (fresh or frozen)",
+      "2 tbsp chopped 100% dark chocolate or sugar-free chips",
+      "2 tbsp chopped toasted walnuts",
+      "2 tbsp shredded coconut",
+      "add blueberries as in base effect: makes the bagels lighter and higher in protein. 3. blueberry + flaxseed meal modifications:",
+      "adds fiber and omega-3 fats texture: slightly nuttier and denser. 4. coconut-chia bagels add-ins:",
+      "eggless",
+      "low-carb eggless bagel collection (greek yogurt-based) 1. preheat oven to 350\u00b0f (175\u00b0c). line a tray. 2. mix dry ingredients. 3. add yogurt and mix. add liquid if dry. 4. fold in flavor-specific ingredients. 5. shape into bagels. 6. bake 22-28 min until golden. 7. cool completely before slicing. low-carb eggless bagel collection (greek yogurt-based) 1. blueberry bagels (base recipe) add-ins:",
+      "optional: 1 tbsp cocoa powder tip: chill dough slightly before shaping to prevent chocolate melting. low-carb eggless bagel collection (greek yogurt-based) 6. lemon poppy seed bagels add-ins:",
+      "optional: 1 tbsp erythritol or monk fruit sweetener tip: use frozen blueberries directly (do not thaw) to avoid sogginess. 2. blueberry + whey protein modifications:",
+      "optional: 1 tbsp sweetener + pinch nutmeg tip: sprinkle with cinnamon 'sugar' before baking. 8. savory garlic & herb bagels add-ins:",
+      "optional: 1 tbsp sweetener tip: goes well with vegan cream cheese or light glaze. 7. cinnamon walnut crunch add-ins:",
+      "optional: 1 tsp vanilla extract + 1 tbsp sweetener tip: let dough rest for 5-10 min so chia can hydrate. 5. chocolate chip bagels add-ins:",
+      "protein",
+      "replace 1/4 cup almond flour with 1/4 cup whey protein isolate",
+      "replace 2 tbsp flour with flaxseed meal",
+      "zest of 1 lemon"
+    ]
+  },
+  {
+    "recipe_id": "r_e92e4eef89",
+    "recipe_name": "Low-Carb Sandwich Loaf System (Eggless)",
+    "source_file": "C:\\lowcarb-recipe-chatbot\\backend\\data\\raw\\pdf\\Hi-ProteinBreadLoaf.pdf",
+    "tags": [
+      "bread",
+      "eggless",
+      "low carb",
+      "protein"
+    ],
+    "bot_keywords": [
+      "11\u201312 g protein",
+      "135 g protein",
+      "40 g net carbs per slice (12): ~190 kcal",
+      "bread",
+      "eggless",
+      "low carb",
+      "low-carb sandwich loaf system (eggless) almond flour \u2013 250 g pea protein isolate \u2013 100 g bamboo fiber \u2013 50 g psyllium husk powder \u2013 10 g xanthan gum \u2013 6 g instant yeast \u2013 5\u20136 g baking powder \u2013 14 g sugar/inulin \u2013 18 g salt \u2013 6 g yogurt \u2013 150 g warm water \u2013 380\u2013420 g oil \u2013 25 g apple cider vinegar \u2013 15 g 1. activate yeast in warm water with sugar (5\u201310 mins). 2. mix dry ingredients. 3. add wet ingredients gradually to form thick batter. 4. rest 45\u201360 mins. 5. transfer to lined loaf pan. 6. bake 375\u00b0f 10 mins",
+      "pre-bake",
+      "protein",
+      "remix 1 min variations: soft loaf: +20 g yogurt + 20 g water taller loaf: reduce pea protein to 95 g burger buns: shape and bake 25\u201330 mins pav: small balls placed together pizza base: spread",
+      "then 350\u00b0f 35\u201340 mins. 7. cool fully before slicing. (approx): low-carb sandwich loaf system (eggless) pea protein + yogurt + bamboo fiber + acv | 8.5 x 4.5 pan ingredients: almond flour \u2013 250 g pea protein isolate \u2013 100 g bamboo fiber \u2013 50 g psyllium husk powder \u2013 10 g xanthan gum \u2013 6 g instant yeast \u2013 5\u20136 g baking powder \u2013 14 g sugar/inulin \u2013 18 g salt \u2013 6 g yogurt \u2013 150 g warm water \u2013 380\u2013420 g oil \u2013 25 g apple cider vinegar \u2013 15 g method: 1. activate yeast in warm water with sugar (5\u201310 mins). 2. mix dry ingredients. 3. add wet ingredients gradually to form thick batter. 4. rest 45\u201360 mins. 5. transfer to lined loaf pan. 6. bake 375\u00b0f 10 mins",
+      "then 350\u00b0f 35\u201340 mins. 7. cool fully before slicing. stand mixer steps: 1. dry mix \u2013 1 min (low speed) 2. add yeast mix \u2013 1\u20132 min 3. add yogurt mix \u2013 2 min 4. add water gradually \u2013 2\u20133 min 5. main mix \u2013 3\u20134 min (medium) 6. rest 2\u20133 min",
+      "then top macros (approx): whole loaf: ~2300 kcal",
+      "~3\u20133.5 g net carbs"
+    ]
+  },
+  {
+    "recipe_id": "r_ac33867f11",
+    "recipe_name": "Mixed Seed Low-Carb Loaf Variation",
+    "source_file": "C:\\lowcarb-recipe-chatbot\\backend\\data\\raw\\pdf\\Mixed_Seed_LowCarb_Loaf_Variation.pdf",
+    "tags": [
+      "bread",
+      "protein"
+    ],
+    "bot_keywords": [
+      "bread",
+      "cheese toast",
+      "fold seeds in gently. 3. mix only until evenly distributed. 4. transfer to loaf pan and smooth top. 5. optional: brush top lightly with water or yogurt-water mix and sprinkle extra seeds. bake follow your locked loaf baking schedule exactly. best uses avocado toast",
+      "grilled veggie sandwiches",
+      "mixed seed low-carb loaf variation use your locked signature everyday low-carb sandwich loaf as the base recipe. seed mix (40\u201350g total) pumpkin seeds \u2014 15g sunflower seeds \u2014 15g sesame seeds \u2014 10g whole flax seeds \u2014 5g chia seeds \u2014 5g important adjustment add 15\u201320 ml extra water to account for chia/flax absorption. 1. prepare your base loaf dough as usual. 2. after dough is fully mixed",
+      "protein",
+      "soup pairing. do not do do not exceed 60g total seeds. do not replace almond flour with seeds. avoid hemp hearts in the first test batch.",
+      "soup pairing. do not do do not exceed 60g total seeds. do not replace almond flour with seeds. avoid hemp hearts in the first test batch. mixed seed low-carb loaf variation use your locked signature everyday low-carb sandwich loaf as the base recipe. seed mix (40\u201350g total) pumpkin seeds \u2014 15g sunflower seeds \u2014 15g sesame seeds \u2014 10g whole flax seeds \u2014 5g chia seeds \u2014 5g important adjustment add 15\u201320 ml extra water to account for chia/flax absorption. method 1. prepare your base loaf dough as usual. 2. after dough is fully mixed"
+    ]
+  },
+  {
+    "recipe_id": "r_3949a40882",
+    "recipe_name": "2. Cream-Enriched Soft Toffee (No Milk Powder)",
+    "source_file": "C:\\lowcarb-recipe-chatbot\\backend\\data\\raw\\pdf\\cashew_toffee_recipes.pdf",
+    "tags": [],
+    "bot_keywords": [
+      "2. cream-enriched soft toffee (no milk powder) ## **ingredients**",
+      "allulose \u2013 1/2 cup",
+      "butter/ghee \u2013 1\u20132 tsp",
+      "cashews \u2013 1 cup (coarse)",
+      "heavy cream \u2013 6\u20137 tbsp",
+      "rose water + cardamom ** ** 1. heat allulose + cream + butter on medium-low until thick and lightly golden. 2. add cashews and cook 2\u20133 minutes. 3. add flavorings",
+      "rose water + cardamom **method** 1. heat allulose + cream + butter on medium-low until thick and lightly golden. 2. add cashews and cook 2\u20133 minutes. 3. add flavorings",
+      "set and slice.",
+      "set and slice. ## 2. cream-enriched soft toffee (no milk powder) **ingredients**"
+    ]
+  },
+  {
+    "recipe_id": "r_27989bb728",
+    "recipe_name": "3. Milk Powder Fudgy Toffee",
+    "source_file": "C:\\lowcarb-recipe-chatbot\\backend\\data\\raw\\pdf\\cashew_toffee_recipes.pdf",
+    "tags": [],
+    "bot_keywords": [
+      "3. milk powder fudgy toffee ## **ingredients**",
+      "allulose \u2013 1/2 cup",
+      "and allulose until syrupy. 2. add milk powder",
+      "butter/ghee \u2013 3 tbsp",
+      "cashews \u2013 1 cup (coarse)",
+      "cook until thick. 3. add cashews and flavorings. 4. spread",
+      "cool",
+      "cream",
+      "heavy cream \u2013 3 tbsp",
+      "milk powder \u2013 4 tbsp",
+      "rose water + cardamom ** ** 1. melt butter",
+      "rose water + cardamom **method** 1. melt butter",
+      "slice. ## 3. milk powder fudgy toffee **ingredients**"
     ]
   },
   {
@@ -229,6 +490,66 @@
     ]
   },
   {
+    "recipe_id": "r_f2c3870823",
+    "recipe_name": "Blueberry Lemon Protein Snack Cake (6x6 Glass Pan)",
+    "source_file": "C:\\lowcarb-recipe-chatbot\\backend\\data\\raw\\pdf\\Blueberry_Lemon_Protein_Cake_6x6_Glass_Pan.pdf",
+    "tags": [
+      "cake",
+      "low carb",
+      "protein",
+      "travel snacks"
+    ],
+    "bot_keywords": [
+      "1 tsp vanilla extract add-ins",
+      "1/4 tsp salt wet ingredients",
+      "120g full-fat greek yogurt",
+      "16g coconut flour",
+      "2 tbsp fresh lemon juice",
+      "2 tsp baking powder",
+      "24\u201326g powdered monkfruit/allulose sweetener",
+      "2\u20133 tsp fresh lemon zest",
+      "36g unflavored whey protein isolate",
+      "44g melted butter",
+      "70g almond flour",
+      "70ml half-and-half or 40ml heavy cream + 30ml water",
+      "70\u201380g fresh blueberries",
+      "blueberry lemon protein snack cake (6x6 glass pan) blueberry lemon protein snack cake (6x6 glass pan) final version sized specifically for your 6x6 glass pan. yes\u2014use parchment paper for easy removal and cleaner slicing. pan prep use a 6x6 glass baking dish. line with parchment paper with slight overhang on two sides. lightly grease parchment and exposed sides. dry ingredients 70g almond flour 36g unflavored whey protein isolate 16g coconut flour 24\u201326g powdered monkfruit/allulose sweetener 2 tsp baking powder 1/4 tsp salt wet ingredients 120g full-fat greek yogurt 70ml half-and-half or 40ml heavy cream + 30ml water 44g melted butter 2 tbsp fresh lemon juice 2\u20133 tsp fresh lemon zest 1 tsp vanilla extract add-ins 70\u201380g fresh blueberries optional sliced almonds for topping 1. preheat oven to 325\u00b0f. 2. prepare parchment-lined pan. 3. whisk dry ingredients well. 4. whisk wet ingredients separately. 5. combine wet + dry gently until just mixed. 6. rest batter for 2 minutes. 7. toss blueberries with 1 tsp almond flour and fold in gently. 8. spread evenly in pan. 9. bake 25\u201332 minutes (check at 24\u201325 min). 10. cool in pan for 20\u201330 minutes before slicing. yield 6 larger squares or 9 smaller squares. texture goal moist tea cake bars with bright lemon flavor and juicy blueberry pockets. blueberry lemon protein snack cake (6x6 glass pan) final version sized specifically for your 6x6 glass pan. yes\u2014use parchment paper for easy removal and cleaner slicing. pan prep use a 6x6 glass baking dish. line with parchment paper with slight overhang on two sides. lightly grease parchment and exposed sides. dry ingredients",
+      "cake",
+      "low carb",
+      "optional sliced almonds for topping method 1. preheat oven to 325\u00b0f. 2. prepare parchment-lined pan. 3. whisk dry ingredients well. 4. whisk wet ingredients separately. 5. combine wet + dry gently until just mixed. 6. rest batter for 2 minutes. 7. toss blueberries with 1 tsp almond flour and fold in gently. 8. spread evenly in pan. 9. bake 25\u201332 minutes (check at 24\u201325 min). 10. cool in pan for 20\u201330 minutes before slicing. yield 6 larger squares or 9 smaller squares. texture goal moist tea cake bars with bright lemon flavor and juicy blueberry pockets.",
+      "protein",
+      "travel snacks"
+    ]
+  },
+  {
+    "recipe_id": "r_2d6023eee5",
+    "recipe_name": "Coconut Chia Payasam with Berries (Low-Carb, Sugar-Free) Festive Batch (4\u20136 servings)",
+    "source_file": "C:\\lowcarb-recipe-chatbot\\backend\\data\\raw\\pdf\\Coconut_Chia_Payasam_4to6_servings.pdf",
+    "tags": [
+      "cake",
+      "protein"
+    ],
+    "bot_keywords": [
+      "and cardamom. 2. stir well and let sit for 30\u201360 minutes (or refrigerate 2\u20133 hours/overnight) until thickened. 3. stir once midway to prevent clumping. 4. top with berries just before serving or lightly mix some in. coconut chia payasam with berries (low-carb",
+      "blueberries \u2013 1/2 cup 1. in a bowl",
+      "cake",
+      "cardamom \u2013 1/2 tsp",
+      "chia seeds",
+      "chia seeds \u2013 4 tbsp",
+      "coconut chia payasam with berries (low-carb",
+      "coconut milk (thick) \u2013 2 cups",
+      "mix coconut milk",
+      "protein",
+      "strawberries \u2013 6 to 8 (chopped)",
+      "sugar-free) festive batch (4\u20136 servings) (4\u20136 small servings):",
+      "sugar-free) festive batch (4\u20136 servings) ingredients (4\u20136 small servings):",
+      "sweetener",
+      "sweetener (allulose/monk fruit) \u2013 6 to 8 tbsp (adjust to taste)",
+      "water",
+      "water \u2013 1 to 1.5 cups (adjust for consistency)"
+    ]
+  },
+  {
     "recipe_id": "r_748c6a51e3",
     "recipe_name": "Crispy Eggless Almond Pecan Cookies",
     "source_file": "C:\\lowcarb-recipe-chatbot\\backend\\data\\raw\\pdf\\Crispy_Eggless_Almond_Pecan_Cookies_Biscotti_Style_Variations_Updated.pdf",
@@ -256,6 +577,41 @@
       "softened) unsalted butter 113 g (\u00bd cup",
       "spiced: add \u00bd tsp cinnamon or a pinch of nutmeg.",
       "use granular sweetener for better crispness."
+    ]
+  },
+  {
+    "recipe_id": "r_8fec5536e3",
+    "recipe_name": "Eggless Low Carb Orange Pistachio Goji Biscotti",
+    "source_file": "C:\\lowcarb-recipe-chatbot\\backend\\data\\raw\\pdf\\Orange_Pistachio_Goji_Low_Carb_Biscotti.pdf",
+    "tags": [
+      "eggless",
+      "low carb",
+      "protein"
+    ],
+    "bot_keywords": [
+      "almond flour \u2013 1\u00be cups (168 g)",
+      "and psyllium gel. \u2013 combine dry ingredients separately",
+      "approx. 1.6\u20132.2 g net carbs per biscotti (depending on yield).",
+      "arrowroot flour \u2013 2 tbsp",
+      "baked crisp ingredients",
+      "butter + allulose give best browning and crunch.",
+      "butter based",
+      "carb orange pistachio goji biscotti monk fruit\u2013allulose",
+      "chopped \u2013 1\u00bc cups dried goji berries \u2013 2 to 3 tbsp (soaked",
+      "chopped) (summary) \u2013 preheat oven to 300\u00b0f (150\u00b0c). line a baking sheet with parchment. \u2013 mix psyllium with warm water",
+      "dried",
+      "eggless",
+      "eggless low carb orange pistachio goji biscotti almond flour \u2013 1\u00be cups (168 g) arrowroot flour \u2013 2 tbsp baking powder \u2013 1 tsp salt \u2013 \u00bc tsp (omit if pistachios are salted) monk fruit\u2013allulose blend (powdered) \u2013 \u00be cup unsalted butter",
+      "inch pieces diagonally. bake 10 min per side until dry. \u2013 cool completely for full crispness. notes",
+      "low carb",
+      "melted & cooled \u2013 \u00bd cup (113 g) greek yogurt or heavy cream \u2013 \u00bc cup vanilla extract \u2013 2 tsp orange zest \u2013 1 tbsp psyllium husk powder \u2013 1 tbsp + warm water \u2013 3 tbsp pistachios",
+      "mix into wet to form thick dough. \u2013 fold in pistachios and prepared goji berries. \u2013 shape into 2 logs (10\u201311 in \u00d7 2 in). bake 30\u201335 min until set. \u2013 cool 10\u201315 min. reduce oven to 275\u00b0f (135\u00b0c). \u2013 slice \u00be",
+      "orange zest",
+      "protein",
+      "rest 2\u20133 minutes to gel. \u2013 whisk butter with sweetener. add yogurt",
+      "store airtight up to 2 weeks or freeze. eggless low",
+      "twice",
+      "vanilla"
     ]
   },
   {
@@ -291,6 +647,42 @@
       "then fully on rack. \u2013 rest wrapped 24\u201348 hours for best flavor and texture. possible variations (structure unchanged)",
       "tsp.",
       "vanilla"
+    ]
+  },
+  {
+    "recipe_id": "r_c74d0e1410",
+    "recipe_name": "Eggless Low-Carb Lemon Protein Tea Cake (Whey Isolate Version)",
+    "source_file": "C:\\lowcarb-recipe-chatbot\\backend\\data\\raw\\pdf\\Low_Carb_Lemon_Protein_Tea_Cake.pdf",
+    "tags": [
+      "cake",
+      "eggless",
+      "low carb",
+      "protein"
+    ],
+    "bot_keywords": [
+      "1 tbsp powdered sweetener",
+      "1 tsp baking powder",
+      "1 tsp poppy seeds (optional) wet ingredients",
+      "12\u201313g powdered monkfruit/allulose sweetener",
+      "18g unflavored grass-fed whey isolate",
+      "2 jumbo muffin cups",
+      "22g melted butter",
+      "35g almond flour",
+      "35ml half-and-half (or 20ml heavy cream + 15ml water)",
+      "60g full-fat greek yogurt",
+      "8g coconut flour",
+      "and actually enjoyable. dry ingredients",
+      "and actually enjoyable. dry ingredients 35g almond flour 18g unflavored grass-fed whey isolate 8g coconut flour 12\u201313g powdered monkfruit/allulose sweetener 1 tsp baking powder pinch of salt 1 tsp poppy seeds (optional) wet ingredients 60g full-fat greek yogurt 35ml half-and-half (or 20ml heavy cream + 15ml water) 22g melted butter 1 tbsp fresh lemon juice 1\u20131\u00bd tsp fresh lemon zest \u00bd tsp vanilla extract optional add-ins few blueberries sliced almonds tiny pinch cardamom 1. preheat oven to 340\u00b0f (170\u00b0c). grease 2 ramekins",
+      "cake",
+      "eggless",
+      "eggless low-carb lemon protein tea cake (whey isolate version) eggless low-carb lemon protein tea cake (whey isolate version) a balanced healthy dessert: lower carb",
+      "few drops lemon juice",
+      "low carb",
+      "moderate protein",
+      "or 1 mini loaf pan. 2. whisk all dry ingredients well and break any whey lumps. 3. in another bowl whisk wet ingredients. 4. combine wet + dry gently. 5. rest batter for 2 minutes so coconut flour hydrates. 6. if too thick: add 1 tsp half-and-half. 7. if too loose: add 1 tsp almond flour. 8. bake 17\u201320 minutes. check at 17 minutes. 9. cool 10\u201315 minutes before eating. microwave version microwave in a large mug for 60\u201375 seconds. rest for 2 minutes. optional lemon glaze",
+      "pinch of salt",
+      "protein",
+      "tiny spoon greek yogurt or cream cheese approx macros eggless low-carb lemon protein tea cake (whey isolate version) a balanced healthy dessert: lower carb"
     ]
   },
   {
@@ -360,6 +752,43 @@
       "place on tray. 5. bake 16\u201318 minutes until lightly golden. 6. cool 10 minutes",
       "roll into 10 balls",
       "then transfer to a rack. 7. mix cinnamon + allulose for coating. 8. after 30 minutes"
+    ]
+  },
+  {
+    "recipe_id": "r_13745b90a4",
+    "recipe_name": "Low-Carb Almond Whey Biscotti (Eggless)",
+    "source_file": "C:\\lowcarb-recipe-chatbot\\backend\\data\\raw\\pdf\\Low_Carb_Almond_Whey_Biscotti.pdf",
+    "tags": [
+      "cake",
+      "eggless",
+      "low carb",
+      "protein"
+    ],
+    "bot_keywords": [
+      "1 tsp baking powder",
+      "1/4 tsp salt flax egg",
+      "2 tbsp flaxmeal",
+      "210g almond flour",
+      "30g unflavored whey protein isolate",
+      "6 tbsp water mix and let sit for 5\u201310 minutes until gelled. wet ingredients",
+      "and salt. 5. fold in nuts and mix-ins. 6. shape into biscotti logs. 7. bake at 325\u00b0f for 25 minutes. 8. cool for 20\u201330 minutes. 9. slice diagonally with serrated knife. 10. bake again at 275\u00b0f for 15 minutes. 11. flip and bake another 15 minutes. 12. cool fully for maximum crispness. optional adjustments",
+      "and zest. 4. add almond flour",
+      "baking powder",
+      "cake",
+      "cardamom pistachio low-carb almond whey biscotti (eggless) a refined version of your proven biscotti recipe with a modest protein boost from whey isolate while keeping the same crisp texture. dry ingredients",
+      "chocolate hazelnut",
+      "eggless",
+      "flax egg",
+      "if dough feels too dry: add 1 tbsp greek yogurt",
+      "if dough feels too sticky: chill dough for 10\u201315 minutes approx macros per biscotti (assuming 20 pieces): ~95\u2013110 calories ~4\u20135g protein ~2\u20134g net carbs flavor variations",
+      "lemon almond",
+      "low carb",
+      "low-carb almond whey biscotti (eggless) a refined version of your proven biscotti recipe with a modest protein boost from whey isolate while keeping the same crisp texture. dry ingredients 210g almond flour 30g unflavored whey protein isolate 1 tsp baking powder 1/4 tsp salt flax egg 2 tbsp flaxmeal 6 tbsp water mix and let sit for 5\u201310 minutes until gelled. wet ingredients 60g melted butter 75g powdered sweetener 1 tbsp lemon zest or orange zest 1 tsp vanilla extract mix-ins 60g chopped nuts 60g goji berries or sugar-free chocolate chips 1. preheat oven to 325\u00b0f and line tray with parchment. 2. prepare flax egg and let it gel. 3. whisk butter",
+      "orange pistachio goji",
+      "protein",
+      "sweetener",
+      "vanilla",
+      "whey isolate"
     ]
   },
   {
@@ -460,38 +889,85 @@
     ]
   },
   {
-    "recipe_id": "r_8fec5536e3",
-    "recipe_name": "Eggless Low Carb Orange Pistachio Goji Biscotti",
-    "source_file": "C:\\lowcarb-recipe-chatbot\\backend\\data\\raw\\pdf\\Orange_Pistachio_Goji_Low_Carb_Biscotti.pdf",
+    "recipe_id": "r_5f1760055a",
+    "recipe_name": "Low-Carb Whey Cookies (Eggless) + Variations",
+    "source_file": "C:\\lowcarb-recipe-chatbot\\backend\\data\\raw\\pdf\\Low_Carb_Whey_Cookies_Variations.pdf",
     "tags": [
+      "cake",
       "eggless",
       "low carb",
       "protein"
     ],
     "bot_keywords": [
-      "almond flour \u2013 1\u00be cups (168 g)",
-      "and psyllium gel. \u2013 combine dry ingredients separately",
-      "approx. 1.6\u20132.2 g net carbs per biscotti (depending on yield).",
-      "arrowroot flour \u2013 2 tbsp",
-      "baked crisp ingredients",
-      "butter + allulose give best browning and crunch.",
-      "butter based",
-      "carb orange pistachio goji biscotti monk fruit\u2013allulose",
-      "chopped \u2013 1\u00bc cups dried goji berries \u2013 2 to 3 tbsp (soaked",
-      "chopped) (summary) \u2013 preheat oven to 300\u00b0f (150\u00b0c). line a baking sheet with parchment. \u2013 mix psyllium with warm water",
-      "dried",
+      "1 tsp baking powder",
+      "1 tsp vanilla extract method 1. preheat oven to 325\u00b0f. 2. mix flaxmeal + water and let gel for 5\u201310 mins. 3. cream butter + sweetener. 4. add flax egg + vanilla. 5. mix dry ingredients separately. 6. combine wet + dry until dough forms. 7. scoop cookies onto parchment-lined tray. 8. flatten slightly. 9. bake 12\u201315 mins until edges set. 10. cool fully before handling. variation 1: chocolate chip add 60g sugar-free chocolate chips sugar-free chocolate chips + pinch espresso powder. variation 2: lemon almond add 1 tbsp lemon zest + sliced almonds. variation 3: orange pistachio add orange zest + 50g chopped pistachios + optional goji berries. variation 4: cardamom cashew add 1/2 tsp cardamom + chopped cashews for an indian bakery-style cookie. variation 5: double chocolate replace 20g almond flour with cocoa powder + add chocolate chips. texture tips",
+      "1/4 tsp salt",
+      "180g almond flour",
+      "2 tbsp flaxmeal + 6 tbsp water (flax egg)",
+      "20g coconut flour",
+      "25g unflavored whey protein isolate",
+      "75g powdered monkfruit/allulose sweetener",
+      "75g softened butter",
+      "cake",
+      "designed to use whey isolate without becoming dry or chalky. think everyday tea cookies with moderate protein and lower carbs. base cookie dough",
+      "designed to use whey isolate without becoming dry or chalky. think everyday tea cookies with moderate protein and lower carbs. base cookie dough 180g almond flour 25g unflavored whey protein isolate 20g coconut flour 1 tsp baking powder 1/4 tsp salt 75g powdered monkfruit/allulose sweetener 75g softened butter 2 tbsp flaxmeal + 6 tbsp water (flax egg) 1 tsp vanilla extract 1. preheat oven to 325\u00b0f. 2. mix flaxmeal + water and let gel for 5\u201310 mins. 3. cream butter + sweetener. 4. add flax egg + vanilla. 5. mix dry ingredients separately. 6. combine wet + dry until dough forms. 7. scoop cookies onto parchment-lined tray. 8. flatten slightly. 9. bake 12\u201315 mins until edges set. 10. cool fully before handling. variation 1: chocolate chip add 60g sugar-free chocolate chips sugar-free chocolate chips + pinch espresso powder. variation 2: lemon almond add 1 tbsp lemon zest + sliced almonds. variation 3: orange pistachio add orange zest + 50g chopped pistachios + optional goji berries. variation 4: cardamom cashew add 1/2 tsp cardamom + chopped cashews for an indian bakery-style cookie. variation 5: double chocolate replace 20g almond flour with cocoa powder + add chocolate chips. texture tips",
       "eggless",
-      "eggless low carb orange pistachio goji biscotti almond flour \u2013 1\u00be cups (168 g) arrowroot flour \u2013 2 tbsp baking powder \u2013 1 tsp salt \u2013 \u00bc tsp (omit if pistachios are salted) monk fruit\u2013allulose blend (powdered) \u2013 \u00be cup unsalted butter",
-      "inch pieces diagonally. bake 10 min per side until dry. \u2013 cool completely for full crispness. notes",
+      "for crisp cookies: bake 2\u20133 mins longer.",
+      "for softer cookies: slightly underbake.",
+      "if dough feels dry: add 1 tbsp greek yogurt.",
+      "if dough feels sticky: chill 20 mins. approx macros assuming 18 cookies: ~95\u2013120 calories each ~4\u20135g protein each ~2\u20134g net carbs each",
+      "if dough feels sticky: chill 20 mins. approx macros assuming 18 cookies: ~95\u2013120 calories each ~4\u20135g protein each ~2\u20134g net carbs each low-carb whey cookies (eggless) + variations a softer cookie formula than biscotti",
       "low carb",
-      "melted & cooled \u2013 \u00bd cup (113 g) greek yogurt or heavy cream \u2013 \u00bc cup vanilla extract \u2013 2 tsp orange zest \u2013 1 tbsp psyllium husk powder \u2013 1 tbsp + warm water \u2013 3 tbsp pistachios",
-      "mix into wet to form thick dough. \u2013 fold in pistachios and prepared goji berries. \u2013 shape into 2 logs (10\u201311 in \u00d7 2 in). bake 30\u201335 min until set. \u2013 cool 10\u201315 min. reduce oven to 275\u00b0f (135\u00b0c). \u2013 slice \u00be",
-      "orange zest",
-      "protein",
-      "rest 2\u20133 minutes to gel. \u2013 whisk butter with sweetener. add yogurt",
-      "store airtight up to 2 weeks or freeze. eggless low",
-      "twice",
-      "vanilla"
+      "low-carb whey cookies (eggless) + variations a softer cookie formula than biscotti",
+      "protein"
+    ]
+  },
+  {
+    "recipe_id": "r_f2aa394243",
+    "recipe_name": "Mixed-Nut Sugar-Free Toffee \u2014 Quick Guide",
+    "source_file": "C:\\lowcarb-recipe-chatbot\\backend\\data\\raw\\pdf\\mixed_nut_toffee_quick_guide.pdf",
+    "tags": [],
+    "bot_keywords": [
+      "## 1. melt allulose with 1\u20132 tbsp water on medium-low until syrupy and lightly golden. 2. add **1\u20132 tsp butter/ghee** and melt fully. 3. add prepared mixed nuts and cook 2\u20133 minutes on low until the mixture forms a cohesive mass. 4. turn off heat",
+      "## ingredients (for 1 batch)",
+      "add **1 additional cup roasted cashews**",
+      "allulose \u2013 **1/2 cup**",
+      "and clean slicing. --",
+      "butter or ghee \u2013 **1\u20132 tsp** (recommended for mixed nuts)",
+      "cardamom \u2013 pinch --",
+      "cashews",
+      "cool completely",
+      "ideal for binding",
+      "mix together",
+      "pecans)",
+      "pistachios",
+      "rebalanced mixed nuts \u2013 **1 cup**",
+      "rose water or vanilla \u2013 **1/2\u20131 tsp**",
+      "softness",
+      "stir in rose water/vanilla and cardamom. 5. spread on parchment",
+      "then take **1 cup** from this mixture for the recipe. this gives at least **50% cashews**",
+      "use **1 cup pre-mixed nuts** (almonds",
+      "water \u2013 **1\u20132 tbsp**"
+    ]
+  },
+  {
+    "recipe_id": "r_b9a363c543",
+    "recipe_name": "Sugar-Free Cashew Toffee \u2014 Complete Recipe Collection",
+    "source_file": "C:\\lowcarb-recipe-chatbot\\backend\\data\\raw\\pdf\\cashew_toffee_recipes.pdf",
+    "tags": [],
+    "bot_keywords": [
+      "add rose water and cardamom. 5. spread on a lined tray",
+      "allulose \u2013 1/2 cup",
+      "and slice.",
+      "and slice. # sugar-free cashew toffee \u2014 complete recipe collection ## 1. minimalist cottage-style toffee (no milk / no cream) **ingredients**",
+      "butter or ghee \u2013 1\u20132 tsp (optional but enhances flavor) ** ** 1. heat allulose with 1\u20132 tbsp water until syrupy and lightly golden. 2. add 1\u20132 tsp butter and melt. 3. add coarsely ground cashews and cook 2\u20133 minutes. 4. turn off heat",
+      "butter or ghee \u2013 1\u20132 tsp (optional but enhances flavor) **method** 1. heat allulose with 1\u20132 tbsp water until syrupy and lightly golden. 2. add 1\u20132 tsp butter and melt. 3. add coarsely ground cashews and cook 2\u20133 minutes. 4. turn off heat",
+      "cardamom \u2013 a pinch",
+      "cashews \u2013 1 cup (coarsely ground)",
+      "cool",
+      "rose water \u2013 1/2\u20131 tsp",
+      "sugar-free cashew toffee \u2014 complete recipe collection # ## 1. minimalist cottage-style toffee (no milk / no cream) **ingredients**",
+      "water \u2013 1\u20132 tbsp"
     ]
   },
   {
@@ -530,9 +1006,9 @@
     ]
   },
   {
-    "recipe_id": "r_52e559e656",
+    "recipe_id": "r_1fbead7c09",
     "recipe_name": "Low-Carb Maddur Vada \u2013 Peanut Variation (Air Fryer)",
-    "source_file": "C:\\lowcarb-recipe-chatbot\\backend\\data\\raw\\pdf\\MaddurVada.pdf",
+    "source_file": "C:\\lowcarb-recipe-chatbot\\backend\\data\\raw\\pdf\\low_carb_maddur_vada_peanut.pdf",
     "tags": [
       "indian",
       "low carb",

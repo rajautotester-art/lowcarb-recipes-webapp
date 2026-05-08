@@ -310,6 +310,7 @@ h3 {
 
 .recipe-option span {
   font-weight: 750;
+  overflow-wrap: anywhere;
 }
 
 .recipe-option small {
@@ -319,10 +320,12 @@ h3 {
 
 .detail-panel {
   overflow-y: auto;
+  min-width: 0;
 }
 
 .recipe-detail {
   padding: 24px;
+  overflow-wrap: anywhere;
 }
 
 .detail-heading {
@@ -355,6 +358,7 @@ h3 {
   margin: 0;
   padding-left: 22px;
   line-height: 1.55;
+  overflow-wrap: anywhere;
 }
 
 .ingredient-list li,
@@ -375,6 +379,11 @@ h3 {
   background: #f1eadb;
   border-radius: 999px;
   font-size: 0.78rem;
+}
+
+.notes-text {
+  line-height: 1.55;
+  overflow-wrap: anywhere;
 }
 
 .empty,

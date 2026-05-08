@@ -75,19 +75,63 @@ KNOWN_INGREDIENTS = [
     "stevia",
 ]
 
+TEXT_REPLACEMENTS = {
+    "â": "-",
+    "â": "-",
+    "â¢": "\n",
+    "â– ": "\n",
+    "â ": "\n",
+    "Â½": "1/2",
+    "Â¼": "1/4",
+    "Â¾": "3/4",
+    "â": "1/3",
+    "â": "2/3",
+    "â": "1/8",
+    "â": "3/8",
+    "â": "5/8",
+    "â": "7/8",
+    "â": '"',
+    "â": '"',
+    "â": "'",
+    "â": "'",
+}
+
 
 def stable_id(source: str, name: str) -> str:
     raw = f"{source}:{name}".encode("utf-8")
     return "r_" + hashlib.sha1(raw).hexdigest()[:10]
 
 
+def normalize_extracted_text(text: str) -> str:
+    for bad, good in TEXT_REPLACEMENTS.items():
+        text = text.replace(bad, good)
+    return text
+
+
 def normalize_text(text: str) -> str:
-    return re.sub(r"\s+", " ", text).strip()
+    return re.sub(r"\s+", " ", normalize_extracted_text(text)).strip()
 
 
 def split_recipe_blocks(text: str) -> list[str]:
     parts = re.split(r"\n\s*---+\s*\n|\n\s*Recipe\s*:\s*", text, flags=re.IGNORECASE)
-    return [part.strip() for part in parts if part.strip()]
+    skipped_headings = (
+        "flavor variations",
+        "ingredients",
+        "ingredients (for 1 batch)",
+        "method",
+        "texture tips",
+        "variations",
+    )
+    blocks = []
+    for part in parts:
+        block = part.strip()
+        if not block:
+            continue
+        title = clean_recipe_name(block.splitlines()[0].strip("# "))
+        if title.lower() in skipped_headings:
+            continue
+        blocks.append(block)
+    return blocks
 
 
 def first_nonempty_line(block: str, fallback: str) -> str:
@@ -99,8 +143,10 @@ def first_nonempty_line(block: str, fallback: str) -> str:
 
 
 def clean_recipe_name(value: str) -> str:
+    value = normalize_extracted_text(value)
     value = value.replace("\x7f", " ").replace("■", " ").strip()
     value = value.replace("*", " ")
+    value = re.sub(r"^#+\s*", "", value)
     value = re.sub(r"\s+", " ", value).strip()
     value = re.split(r"\s{2,}| Dry:| Wet:| Ingredients?:| Method:| Instructions?:", value, maxsplit=1)[0]
     value = re.sub(r"\b\d{6}[\s_-]+\d{6}\b", "", value)
@@ -149,6 +195,7 @@ def extract_major_section(block: str, names: list[str], stop_names: list[str]) -
 
 
 def split_ingredient_and_method_text(block: str, recipe_name: str) -> tuple[str, str]:
+    block = normalize_extracted_text(block)
     text = block.replace("\x7f", "\n").replace("■", "\n").replace("•", "\n")
     text = re.sub(re.escape(recipe_name), "", text, count=1, flags=re.IGNORECASE).strip()
 
@@ -173,6 +220,7 @@ def split_ingredient_and_method_text(block: str, recipe_name: str) -> tuple[str,
 def extract_listish(value: str) -> list[str]:
     if not value:
         return []
+    value = normalize_extracted_text(value)
     value = value.replace("\x7f", "\n").replace("■", "\n").replace("•", "\n")
     pieces = re.split(r",|\n|;|- ", value)
     cleaned = []
@@ -191,6 +239,7 @@ def extract_listish(value: str) -> list[str]:
 def extract_steps(value: str) -> list[str]:
     if not value:
         return []
+    value = normalize_extracted_text(value)
     value = normalize_text(value.replace("\x7f", " ").replace("■", " "))
     parts = re.split(r"\s+(?=\d+[\.\)]\s+)", value)
     steps = []
@@ -243,6 +292,10 @@ def infer_category(tags: list[str], text: str) -> str:
         return "General"
     if any(term in lowered for term in ["cookie", "cookies", "donut", "donuts", "barfi", "danish butter"]):
         return "Dessert"
+    if any(term in lowered for term in ["toffee", "payasam", "biscotti"]):
+        return "Dessert"
+    if any(term in lowered for term in ["bun", "buns", "loaf", "bread", "focaccia", "bagel"]):
+        return "Bread"
     if "cake" in tags:
         return "Dessert"
     if "travel snacks" in tags:
@@ -330,7 +383,7 @@ def extract_pdf_text(path: Path) -> str:
     page_text = []
     for page in reader.pages:
         page_text.append(page.extract_text() or "")
-    return "\n".join(page_text).strip()
+    return normalize_extracted_text("\n".join(page_text)).strip()
 
 
 def parse_pdf_file(path: Path) -> list[dict[str, Any]]:
