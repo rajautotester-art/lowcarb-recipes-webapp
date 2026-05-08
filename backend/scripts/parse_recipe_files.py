@@ -148,6 +148,7 @@ def clean_recipe_name(value: str) -> str:
     value = value.replace("*", " ")
     value = re.sub(r"^#+\s*", "", value)
     value = re.sub(r"\s+", " ", value).strip()
+    value = re.sub(r"^\d+[\.)]\s*", "", value)
     value = re.split(r"\s{2,}| Dry:| Wet:| Ingredients?:| Method:| Instructions?:", value, maxsplit=1)[0]
     value = re.sub(r"\b\d{6}[\s_-]+\d{6}\b", "", value)
     value = re.sub(r"\s+", " ", value).strip(" -:|")

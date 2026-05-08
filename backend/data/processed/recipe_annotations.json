@@ -417,44 +417,6 @@
     ]
   },
   {
-    "recipe_id": "r_3949a40882",
-    "recipe_name": "2. Cream-Enriched Soft Toffee (No Milk Powder)",
-    "source_file": "C:\\lowcarb-recipe-chatbot\\backend\\data\\raw\\pdf\\cashew_toffee_recipes.pdf",
-    "tags": [],
-    "bot_keywords": [
-      "2. cream-enriched soft toffee (no milk powder) ## **ingredients**",
-      "allulose \u2013 1/2 cup",
-      "butter/ghee \u2013 1\u20132 tsp",
-      "cashews \u2013 1 cup (coarse)",
-      "heavy cream \u2013 6\u20137 tbsp",
-      "rose water + cardamom ** ** 1. heat allulose + cream + butter on medium-low until thick and lightly golden. 2. add cashews and cook 2\u20133 minutes. 3. add flavorings",
-      "rose water + cardamom **method** 1. heat allulose + cream + butter on medium-low until thick and lightly golden. 2. add cashews and cook 2\u20133 minutes. 3. add flavorings",
-      "set and slice.",
-      "set and slice. ## 2. cream-enriched soft toffee (no milk powder) **ingredients**"
-    ]
-  },
-  {
-    "recipe_id": "r_27989bb728",
-    "recipe_name": "3. Milk Powder Fudgy Toffee",
-    "source_file": "C:\\lowcarb-recipe-chatbot\\backend\\data\\raw\\pdf\\cashew_toffee_recipes.pdf",
-    "tags": [],
-    "bot_keywords": [
-      "3. milk powder fudgy toffee ## **ingredients**",
-      "allulose \u2013 1/2 cup",
-      "and allulose until syrupy. 2. add milk powder",
-      "butter/ghee \u2013 3 tbsp",
-      "cashews \u2013 1 cup (coarse)",
-      "cook until thick. 3. add cashews and flavorings. 4. spread",
-      "cool",
-      "cream",
-      "heavy cream \u2013 3 tbsp",
-      "milk powder \u2013 4 tbsp",
-      "rose water + cardamom ** ** 1. melt butter",
-      "rose water + cardamom **method** 1. melt butter",
-      "slice. ## 3. milk powder fudgy toffee **ingredients**"
-    ]
-  },
-  {
     "recipe_id": "r_37d8e6314b",
     "recipe_name": "Berry + Flax Nut & Seed Cluster Granola (No Oats)",
     "source_file": "C:\\lowcarb-recipe-chatbot\\backend\\data\\raw\\pdf\\Berry_Flax_Cluster_Granola.pdf",
@@ -547,6 +509,23 @@
       "sweetener (allulose/monk fruit) \u2013 6 to 8 tbsp (adjust to taste)",
       "water",
       "water \u2013 1 to 1.5 cups (adjust for consistency)"
+    ]
+  },
+  {
+    "recipe_id": "r_55e575954b",
+    "recipe_name": "Cream-Enriched Soft Toffee (No Milk Powder)",
+    "source_file": "C:\\lowcarb-recipe-chatbot\\backend\\data\\raw\\pdf\\cashew_toffee_recipes.pdf",
+    "tags": [],
+    "bot_keywords": [
+      "allulose \u2013 1/2 cup",
+      "butter/ghee \u2013 1\u20132 tsp",
+      "cashews \u2013 1 cup (coarse)",
+      "cream-enriched soft toffee (no milk powder) ## 2. **ingredients**",
+      "heavy cream \u2013 6\u20137 tbsp",
+      "rose water + cardamom ** ** 1. heat allulose + cream + butter on medium-low until thick and lightly golden. 2. add cashews and cook 2\u20133 minutes. 3. add flavorings",
+      "rose water + cardamom **method** 1. heat allulose + cream + butter on medium-low until thick and lightly golden. 2. add cashews and cook 2\u20133 minutes. 3. add flavorings",
+      "set and slice.",
+      "set and slice. ## 2. cream-enriched soft toffee (no milk powder) **ingredients**"
     ]
   },
   {
@@ -920,6 +899,27 @@
       "low carb",
       "low-carb whey cookies (eggless) + variations a softer cookie formula than biscotti",
       "protein"
+    ]
+  },
+  {
+    "recipe_id": "r_76f3ab69e9",
+    "recipe_name": "Milk Powder Fudgy Toffee",
+    "source_file": "C:\\lowcarb-recipe-chatbot\\backend\\data\\raw\\pdf\\cashew_toffee_recipes.pdf",
+    "tags": [],
+    "bot_keywords": [
+      "allulose \u2013 1/2 cup",
+      "and allulose until syrupy. 2. add milk powder",
+      "butter/ghee \u2013 3 tbsp",
+      "cashews \u2013 1 cup (coarse)",
+      "cook until thick. 3. add cashews and flavorings. 4. spread",
+      "cool",
+      "cream",
+      "heavy cream \u2013 3 tbsp",
+      "milk powder fudgy toffee ## 3. **ingredients**",
+      "milk powder \u2013 4 tbsp",
+      "rose water + cardamom ** ** 1. melt butter",
+      "rose water + cardamom **method** 1. melt butter",
+      "slice. ## 3. milk powder fudgy toffee **ingredients**"
     ]
   },
   {
