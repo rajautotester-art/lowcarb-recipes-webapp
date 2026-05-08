@@ -1,0 +1,527 @@
+:root {
+  color: #1f261f;
+  background: #f3f1ea;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  -webkit-text-size-adjust: 100%;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+  touch-action: manipulation;
+}
+
+.app-shell {
+  display: grid;
+  grid-template-columns: minmax(340px, 0.9fr) minmax(260px, 0.55fr) minmax(420px, 1.15fr);
+  gap: 18px;
+  min-height: 100vh;
+  padding: 18px;
+}
+
+.mobile-tabs {
+  display: none;
+}
+
+.chat-panel,
+.results-panel,
+.detail-panel {
+  min-height: calc(100vh - 36px);
+  background: #fffdf8;
+  border: 1px solid #ddd7c8;
+  border-radius: 8px;
+  box-shadow: 0 12px 26px rgba(55, 48, 33, 0.08);
+  overflow: hidden;
+}
+
+.chat-panel {
+  display: flex;
+  flex-direction: column;
+}
+
+.app-header {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 22px;
+  border-bottom: 1px solid #e6dfd0;
+}
+
+.eyebrow {
+  margin: 0 0 6px;
+  color: #657160;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+
+h1 {
+  margin-bottom: 0;
+  font-size: 1.7rem;
+}
+
+h2 {
+  margin-bottom: 0;
+  font-size: 1.35rem;
+}
+
+h3 {
+  margin-bottom: 10px;
+  font-size: 0.98rem;
+}
+
+.ghost-button {
+  white-space: nowrap;
+  padding: 8px 12px;
+  color: #2f6b57;
+  background: #eef4e7;
+  border: 1px solid #c9d8bf;
+  border-radius: 6px;
+}
+
+.index-panel {
+  max-height: 34vh;
+  padding: 14px 16px 16px;
+  border-bottom: 1px solid #e6dfd0;
+  overflow-y: auto;
+}
+
+.panel-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.panel-title h2 {
+  font-size: 1rem;
+}
+
+.panel-title span {
+  min-width: 28px;
+  padding: 4px 8px;
+  color: #ffffff;
+  text-align: center;
+  background: #2f6b57;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
+.recipe-index {
+  display: grid;
+  gap: 8px;
+}
+
+.recipe-index details {
+  background: #fbf7ed;
+  border: 1px solid #e2d8c5;
+  border-radius: 7px;
+}
+
+.recipe-index summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 11px;
+  color: #263025;
+  font-weight: 800;
+  list-style: none;
+  cursor: pointer;
+}
+
+.recipe-index summary::-webkit-details-marker {
+  display: none;
+}
+
+.recipe-index summary::before {
+  content: ">";
+  color: #bb5a2a;
+  font-weight: 900;
+}
+
+.recipe-index details[open] summary::before {
+  transform: rotate(90deg);
+}
+
+.recipe-index summary span {
+  flex: 1;
+}
+
+.recipe-index summary small {
+  padding: 2px 7px;
+  color: #6f5634;
+  background: #f1eadb;
+  border-radius: 999px;
+}
+
+.index-items {
+  display: grid;
+  gap: 3px;
+  padding: 0 8px 9px 26px;
+}
+
+.index-recipe {
+  width: 100%;
+  padding: 7px 8px;
+  color: #364033;
+  text-align: left;
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 6px;
+}
+
+.index-recipe:hover,
+.index-recipe.is-selected {
+  color: #1f5c47;
+  background: #eef4e7;
+  border-color: #d8e3ce;
+}
+
+.messages {
+  flex: 1;
+  overflow-y: auto;
+  padding: 20px 22px;
+}
+
+.message {
+  width: fit-content;
+  max-width: 88%;
+  margin-bottom: 12px;
+  padding: 11px 13px;
+  border-radius: 8px;
+  line-height: 1.45;
+}
+
+.message--assistant {
+  background: #eef4e7;
+  border: 1px solid #d8e3ce;
+}
+
+.message--user {
+  margin-left: auto;
+  color: #ffffff;
+  background: #2f6b57;
+}
+
+.chat-form {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 10px;
+  padding: 16px;
+  border-top: 1px solid #e6dfd0;
+}
+
+.chat-form input {
+  min-width: 0;
+  padding: 12px 13px;
+  border: 1px solid #cfc8b8;
+  border-radius: 6px;
+}
+
+.chat-form button {
+  padding: 12px 17px;
+  color: #fff;
+  background: #2f6b57;
+  border: 0;
+  border-radius: 6px;
+}
+
+.chat-form button:disabled {
+  opacity: 0.65;
+  cursor: wait;
+}
+
+.error {
+  margin: 0 16px 12px;
+  padding: 10px 12px;
+  color: #8b1e1e;
+  background: #fdeaea;
+  border: 1px solid #f2c5c5;
+  border-radius: 6px;
+}
+
+.results-panel {
+  padding: 18px;
+  overflow-y: auto;
+}
+
+.results-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+
+.results-header span {
+  min-width: 32px;
+  padding: 5px 9px;
+  color: #fff;
+  text-align: center;
+  background: #bb5a2a;
+  border-radius: 999px;
+}
+
+.recipe-list {
+  display: grid;
+  gap: 9px;
+}
+
+.recipe-option {
+  display: grid;
+  gap: 4px;
+  width: 100%;
+  padding: 12px;
+  color: #263025;
+  text-align: left;
+  background: #fff;
+  border: 1px solid #ddd7c8;
+  border-radius: 7px;
+}
+
+.recipe-option:hover,
+.recipe-option.is-selected {
+  border-color: #2f6b57;
+  background: #eef4e7;
+}
+
+.recipe-option span {
+  font-weight: 750;
+}
+
+.recipe-option small {
+  color: #6f5634;
+  font-weight: 700;
+}
+
+.detail-panel {
+  overflow-y: auto;
+}
+
+.recipe-detail {
+  padding: 24px;
+}
+
+.detail-heading {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #e6dfd0;
+}
+
+.recipe-detail section {
+  margin-top: 22px;
+}
+
+.macros {
+  display: inline-block;
+  margin-bottom: 0;
+  padding: 8px 10px;
+  color: #1f5c47;
+  background: #eef4e7;
+  border: 1px solid #d8e3ce;
+  border-radius: 6px;
+  font-weight: 750;
+}
+
+.ingredient-list,
+.method-list {
+  margin: 0;
+  padding-left: 22px;
+  line-height: 1.55;
+}
+
+.ingredient-list li,
+.method-list li {
+  margin-bottom: 7px;
+}
+
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-top: 22px;
+}
+
+.tag-list span {
+  padding: 5px 8px;
+  color: #394333;
+  background: #f1eadb;
+  border-radius: 999px;
+  font-size: 0.78rem;
+}
+
+.empty,
+.detail-empty {
+  color: #6f726a;
+}
+
+.detail-empty {
+  padding: 24px;
+  line-height: 1.5;
+}
+
+@media (max-width: 1100px) {
+  .app-shell {
+    grid-template-columns: 1fr;
+  }
+
+  .chat-panel,
+  .results-panel,
+  .detail-panel {
+    min-height: auto;
+  }
+
+  .chat-panel {
+    min-height: 60vh;
+  }
+}
+
+@media (max-width: 720px) {
+  body {
+    background: #fffdf8;
+  }
+
+  .app-shell {
+    display: block;
+    min-height: 100svh;
+    padding: 0;
+  }
+
+  .mobile-tabs {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 4px;
+    padding: 8px;
+    background: #f3f1ea;
+    border-bottom: 1px solid #ddd7c8;
+  }
+
+  .mobile-tabs button {
+    min-height: 42px;
+    padding: 8px 5px;
+    color: #394333;
+    background: #fffdf8;
+    border: 1px solid #ddd7c8;
+    border-radius: 6px;
+    font-size: 0.86rem;
+    font-weight: 800;
+  }
+
+  .mobile-tabs button.is-active {
+    color: #ffffff;
+    background: #2f6b57;
+    border-color: #2f6b57;
+  }
+
+  .chat-panel,
+  .results-panel,
+  .detail-panel {
+    display: none;
+    min-height: calc(100svh - 59px);
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  .app-shell[data-mobile-view="index"] .chat-panel,
+  .app-shell[data-mobile-view="chat"] .chat-panel,
+  .app-shell[data-mobile-view="matches"] .results-panel,
+  .app-shell[data-mobile-view="detail"] .detail-panel {
+    display: flex;
+  }
+
+  .app-shell[data-mobile-view="matches"] .results-panel,
+  .app-shell[data-mobile-view="detail"] .detail-panel {
+    flex-direction: column;
+  }
+
+  .app-shell[data-mobile-view="index"] .messages,
+  .app-shell[data-mobile-view="index"] .chat-form,
+  .app-shell[data-mobile-view="chat"] .index-panel {
+    display: none;
+  }
+
+  .app-header {
+    padding: 16px;
+  }
+
+  .app-header h1 {
+    font-size: 1.32rem;
+  }
+
+  .index-panel {
+    max-height: none;
+    flex: 1;
+    padding: 14px;
+    border-bottom: 0;
+  }
+
+  .messages {
+    padding: 16px;
+  }
+
+  .message {
+    max-width: 94%;
+  }
+
+  .chat-form {
+    position: sticky;
+    bottom: 0;
+    grid-template-columns: 1fr;
+    padding: 12px;
+    background: #fffdf8;
+  }
+
+  .chat-form input,
+  .chat-form button {
+    min-height: 46px;
+    font-size: 1rem;
+  }
+
+  .results-panel {
+    padding: 14px;
+  }
+
+  .recipe-detail {
+    padding: 18px 16px 28px;
+  }
+
+  .detail-heading {
+    display: block;
+  }
+
+  .ingredient-list,
+  .method-list {
+    padding-left: 20px;
+  }
+}
