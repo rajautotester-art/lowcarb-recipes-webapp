@@ -190,7 +190,7 @@ def extract_section(block: str, names: list[str]) -> str:
 def extract_major_section(block: str, names: list[str], stop_names: list[str]) -> str:
     joined_names = "|".join(re.escape(name) for name in names)
     joined_stops = "|".join(re.escape(name) for name in stop_names)
-    pattern = rf"(?is)(?:^|\n)\s*(?:{joined_names})\s*:?\s*\n?(.*?)(?=\n\s*(?:{joined_stops})\s*:?\s*\n|\Z)"
+    pattern = rf"(?is)(?:^|\n)\s*(?:{joined_names})\b[^\n]*:?\s*\n?(.*?)(?=\n\s*(?:{joined_stops})\b[^\n]*\n|\Z)"
     match = re.search(pattern, block)
     return match.group(1).strip() if match else ""
 
@@ -242,6 +242,7 @@ def extract_steps(value: str) -> list[str]:
         return []
     value = normalize_extracted_text(value)
     value = re.split(r"\b(?:approximate\s+)?macros?\b|\bnutrition\b", value, maxsplit=1, flags=re.IGNORECASE)[0]
+    value = value.replace("\x7f", "\n")
     value = normalize_text(value.replace("\x7f", " ").replace("■", " "))
     heading_patterns = [
         r"buns?\s*/\s*rolls?",
@@ -250,10 +251,11 @@ def extract_steps(value: str) -> list[str]:
         r"method",
         r"instructions?",
         r"directions?",
+        r"optional\s+variations?",
         r"tips?\s*&\s*variations?",
-        r"variations?",
         r"notes?",
     ]
+    value = re.sub(r"(?i)\b(variation\s+\d+\s*:)", r"\n\1", value)
     for pattern in heading_patterns:
         value = re.sub(rf"(?i)\b({pattern})\b", r"\n\1\n", value)
     value = re.sub(r"\s+(?=\d+[\.\)]?\s+[A-Z])", "\n", value)
@@ -267,8 +269,16 @@ def extract_steps(value: str) -> list[str]:
     steps = []
     for part in parts:
         step = re.sub(r"^\d+[\.\)]?\s*", "", part).strip(" -:;")
+        step = re.sub(r"\s+\d+$", "", step).strip()
         if step and step not in {"-", "–", "—"}:
-            steps.append(step)
+            if len(step) > 320:
+                steps.extend(
+                    sentence.strip()
+                    for sentence in re.split(r"(?<=[.!?])\s+(?=[A-Z])", step)
+                    if sentence.strip()
+                )
+            else:
+                steps.append(step)
     return steps or [value]
 
 
@@ -357,7 +367,11 @@ def parse_text_block(block: str, source_file: Path, index: int) -> dict[str, Any
         ["ingredients", "ingredient"],
         ["instructions", "method", "directions", "steps", "preparation", "macros", "nutrition"],
     )
-    notes = extract_section(block, ["notes", "note", "method", "instructions"])
+    notes = extract_major_section(
+        block,
+        ["method", "base method", "instructions", "directions", "steps", "preparation"],
+        ["estimated nutrition", "nutrition", "macros"],
+    ) or extract_section(block, ["notes", "note", "method", "instructions"])
     if not ingredients_raw or not notes:
         inferred_ingredients, inferred_notes = split_ingredient_and_method_text(block, name)
         ingredients_raw = ingredients_raw or inferred_ingredients
