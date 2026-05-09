@@ -78,14 +78,19 @@ def load_recipes() -> pd.DataFrame:
 def _records(df: pd.DataFrame) -> list[dict[str, Any]]:
     if df.empty:
         return []
-    records = df.fillna("").to_dict(orient="records")
-    for record in records:
-        for key, value in list(record.items()):
-            if hasattr(value, "tolist") and not isinstance(value, str):
-                record[key] = value.tolist()
-            elif isinstance(value, float) and value != value:
-                record[key] = None
-    return records
+    return [_to_jsonable(record) for record in df.fillna("").to_dict(orient="records")]
+
+
+def _to_jsonable(value: Any) -> Any:
+    if hasattr(value, "tolist") and not isinstance(value, str):
+        return _to_jsonable(value.tolist())
+    if isinstance(value, dict):
+        return {key: _to_jsonable(item) for key, item in value.items()}
+    if isinstance(value, (list, tuple)):
+        return [_to_jsonable(item) for item in value]
+    if isinstance(value, float) and value != value:
+        return None
+    return value
 
 
 def get_all_recipes() -> list[dict[str, Any]]:
