@@ -94,6 +94,17 @@ function RecipeDetail({ recipe }) {
   }
 
   const ingredients = asList(recipe.ingredients).map(cleanDisplayText).filter(Boolean)
+  const ingredientGroups = asList(recipe.ingredient_groups)
+    .map((group) => ({
+      section: cleanDisplayText(group.section || 'Ingredients'),
+      items: asList(group.items)
+        .map((item) => ({
+          item: cleanDisplayText(item.item || item),
+          amount: cleanDisplayText(item.amount || ''),
+        }))
+        .filter((item) => item.item),
+    }))
+    .filter((group) => group.items.length)
   const methodSteps = asList(recipe.method_steps).map(cleanDisplayText).filter(Boolean)
   const tags = asList(recipe.tags)
   const notes = cleanDisplayText(recipe.notes)
@@ -111,7 +122,23 @@ function RecipeDetail({ recipe }) {
 
       <section>
         <h3>Ingredients</h3>
-        {ingredients.length ? (
+        {ingredientGroups.length ? (
+          <div className="ingredient-groups">
+            {ingredientGroups.map((group) => (
+              <div className="ingredient-group" key={group.section}>
+                <h4>{group.section}</h4>
+                <div className="ingredient-table" role="table">
+                  {group.items.map((ingredient, index) => (
+                    <div className="ingredient-row" key={`${group.section}-${ingredient.item}-${index}`} role="row">
+                      <span role="cell">{ingredient.item}</span>
+                      <strong role="cell">{ingredient.amount}</strong>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+        ) : ingredients.length ? (
           <ul className="ingredient-list">
             {ingredients.map((ingredient, index) => (
               <li key={`${ingredient}-${index}`}>{ingredient}</li>

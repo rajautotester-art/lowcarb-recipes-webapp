@@ -237,6 +237,86 @@ def extract_listish(value: str) -> list[str]:
     return cleaned
 
 
+def section_lines_as_numbered_steps(value: str) -> str:
+    lines = extract_listish(value)
+    return " ".join(f"{index + 1} {line[:1].upper()}{line[1:]}" for index, line in enumerate(lines))
+
+
+def split_quantity_item(value: str) -> dict[str, str]:
+    item = normalize_text(value).strip(" -:;")
+    item = re.sub(r"\s*\|\s*", " | ", item)
+    match = re.match(r"^(?P<name>.+?)\s+[–—-]\s+(?P<amount>.+)$", item)
+    if match:
+        return {"item": match.group("name").strip(), "amount": match.group("amount").strip()}
+    measure = re.search(
+        r"(?P<amount>\d+(?:\.\d+)?\s*(?:/\s*\d+)?|\d+/\d+|[¼½¾⅓⅔⅛⅜⅝⅞])\s*(?:to\s*)?(?:[¼½¾⅓⅔⅛⅜⅝⅞]|\d+(?:\.\d+)?|\d+/\d+)?\s*(?:cup|cups|tbsp|tsp|g|grams?|ml|pinch|pinches|spray|drops?)?\\b.*",
+        item,
+        flags=re.IGNORECASE,
+    )
+    if measure and measure.start() > 0:
+        return {"item": item[: measure.start()].strip(" -:;"), "amount": item[measure.start() :].strip()}
+    return {"item": item, "amount": ""}
+
+
+def extract_ingredient_groups(value: str, recipe_name: str) -> list[dict[str, Any]]:
+    if not value:
+        return []
+    text = normalize_extracted_text(value).replace("\x7f", "\n").replace("â– ", "\n").replace("â€¢", "\n")
+    text = re.sub(re.escape(recipe_name), "", text, count=1, flags=re.IGNORECASE)
+    heading_pattern = re.compile(
+        r"^(?:base dough(?: ingredients)?|dry(?: mix)?|wet(?: / binding ingredients)?|add-ins?(?: \\(after baking\\))?|cinnamon .*coating|variation\\s+\\d+\\s*:.+|classic onion akki rotti:?|carrot akki rotti:?|cabbage akki rotti:?|bottle gourd .*akki rotti:?|methi / dill akki rotti:?|onion & vegetable add-in variations.*|base technique.*)$",
+        re.IGNORECASE,
+    )
+    skip_pattern = re.compile(
+        r"^(?:ingredients?|method|instructions?|notes?|estimated nutrition|nutrition|macros|rice-free|all variations below|includes\\b|use the same\\b)",
+        re.IGNORECASE,
+    )
+    groups: list[dict[str, Any]] = []
+    current = {"section": "Ingredients", "items": []}
+
+    def push_current() -> None:
+        nonlocal current
+        if current["items"]:
+            groups.append(current)
+        current = {"section": "Ingredients", "items": []}
+
+    for raw_line in text.splitlines():
+        line = normalize_text(raw_line)
+        if not line:
+            continue
+        line = line.strip(" -:;")
+        if not line or skip_pattern.match(line):
+            continue
+        variation_inline = re.search(
+            r"(?i)\b(variation\s+\d+\s*:.+?)(?=\s+[A-Z][A-Za-z /()]+\s+[–—-]\s+|$)",
+            line,
+        )
+        if variation_inline:
+            before = line[: variation_inline.start()].strip(" -:;")
+            if before and (re.search(r"\d|[¼½¾⅓⅔⅛⅜⅝⅞]", before) or "optional" in before.lower()):
+                for piece in re.split(r"\s+\|\s+", before):
+                    item = split_quantity_item(piece)
+                    if item["item"]:
+                        current["items"].append(item)
+            push_current()
+            current = {"section": variation_inline.group(1).rstrip(":"), "items": []}
+            line = line[variation_inline.end() :].strip(" -:;")
+            if not line:
+                continue
+        if heading_pattern.match(line):
+            push_current()
+            current = {"section": line.rstrip(":"), "items": []}
+            continue
+        if re.search(r"\d|[¼½¾⅓⅔⅛⅜⅝⅞]", line) or "optional" in line.lower():
+            for piece in re.split(r"\s+\|\s+", line):
+                item = split_quantity_item(piece)
+                if item["item"]:
+                    current["items"].append(item)
+
+    push_current()
+    return groups
+
+
 def extract_steps(value: str) -> list[str]:
     if not value:
         return []
@@ -362,16 +442,30 @@ def parse_text_block(block: str, source_file: Path, index: int) -> dict[str, Any
     else:
         name = extract_section(block, ["recipe_name", "name", "title"]) or first_nonempty_line(block, fallback_name)
     name = clean_recipe_name(name)
+    ingredient_stop_names = ["instructions", "method", "directions", "steps", "preparation", "notes", "macros", "nutrition"]
     ingredients_raw = extract_major_section(
         block,
         ["ingredients", "ingredient"],
-        ["instructions", "method", "directions", "steps", "preparation", "macros", "nutrition"],
+        ingredient_stop_names,
     )
-    notes = extract_major_section(
+    if not ingredients_raw:
+        ingredients_raw = extract_major_section(
+            block,
+            ["base technique", "base dough", "variation 1"],
+            ["notes", "instructions", "method", "directions", "steps", "preparation", "macros", "nutrition"],
+        )
+    base_technique = extract_major_section(
+        block,
+        ["base technique"],
+        ["variation 1", "ingredients", "notes", "instructions", "method", "directions", "steps", "preparation", "macros", "nutrition"],
+    )
+    method_text = extract_major_section(
         block,
         ["method", "base method", "instructions", "directions", "steps", "preparation"],
         ["estimated nutrition", "nutrition", "macros"],
-    ) or extract_section(block, ["notes", "note", "method", "instructions"])
+    )
+    note_text = extract_section(block, ["notes", "note"])
+    notes = method_text or section_lines_as_numbered_steps(base_technique) or note_text
     if not ingredients_raw or not notes:
         inferred_ingredients, inferred_notes = split_ingredient_and_method_text(block, name)
         ingredients_raw = ingredients_raw or inferred_ingredients
@@ -386,7 +480,13 @@ def parse_text_block(block: str, source_file: Path, index: int) -> dict[str, Any
 
     full_text = normalize_text(f"{name} {ingredients_raw} {notes} {macros_text} {block}")
     tag_text = normalize_text(f"{name} {ingredients_raw} {macros_text}")
-    ingredients = extract_listish(ingredients_raw) or infer_ingredients(full_text)
+    ingredient_groups = extract_ingredient_groups(ingredients_raw, name)
+    grouped_ingredients = [
+        f"{item['item']} - {item['amount']}" if item.get("amount") else item["item"]
+        for group in ingredient_groups
+        for item in group["items"]
+    ]
+    ingredients = grouped_ingredients or extract_listish(ingredients_raw) or infer_ingredients(full_text)
     tags = infer_tags(tag_text)
     macros = infer_macros(full_text)
     category = infer_category(tags, tag_text)
@@ -397,6 +497,7 @@ def parse_text_block(block: str, source_file: Path, index: int) -> dict[str, Any
         "recipe_name": name,
         "category": category,
         "ingredients": ingredients,
+        "ingredient_groups": ingredient_groups,
         "tags": tags,
         "macros": macros_text or ", ".join(f"{k}: {v}" for k, v in macros.items() if v is not None),
         "notes": notes,

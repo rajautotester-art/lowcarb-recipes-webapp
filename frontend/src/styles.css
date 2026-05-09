@@ -91,6 +91,12 @@ h3 {
   font-size: 0.98rem;
 }
 
+h4 {
+  margin: 0 0 8px;
+  color: #40513d;
+  font-size: 0.92rem;
+}
+
 .ghost-button {
   white-space: nowrap;
   padding: 8px 12px;
@@ -361,6 +367,50 @@ h3 {
   overflow-wrap: anywhere;
 }
 
+.ingredient-groups {
+  display: grid;
+  gap: 14px;
+}
+
+.ingredient-group {
+  border: 1px solid #e1d9c8;
+  border-radius: 7px;
+  overflow: hidden;
+}
+
+.ingredient-group h4 {
+  padding: 10px 12px;
+  background: #f7f1e5;
+  border-bottom: 1px solid #e1d9c8;
+}
+
+.ingredient-table {
+  display: grid;
+}
+
+.ingredient-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(100px, 0.42fr);
+  gap: 12px;
+  padding: 9px 12px;
+  border-bottom: 1px solid #eee7d9;
+  line-height: 1.4;
+}
+
+.ingredient-row:last-child {
+  border-bottom: 0;
+}
+
+.ingredient-row span,
+.ingredient-row strong {
+  overflow-wrap: anywhere;
+}
+
+.ingredient-row strong {
+  color: #6f5634;
+  font-weight: 800;
+}
+
 .ingredient-list li,
 .method-list li {
   margin-bottom: 7px;
@@ -532,5 +582,10 @@ h3 {
   .ingredient-list,
   .method-list {
     padding-left: 20px;
+  }
+
+  .ingredient-row {
+    grid-template-columns: 1fr;
+    gap: 3px;
   }
 }
