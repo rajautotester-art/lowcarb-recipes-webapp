@@ -274,13 +274,27 @@ def split_quantity_item(value: str) -> dict[str, str]:
     return {"item": item, "amount": ""}
 
 
+def looks_like_quantity(value: str) -> bool:
+    value = normalize_text(value).strip()
+    if not value:
+        return False
+    quantity_chars = r"Â¼Â½Â¾â…“â…”â…›â…œâ…â…ž¼½¾⅓⅔⅛⅜⅝⅞"
+    return bool(
+        re.match(
+            rf"^(?:[{quantity_chars}]|\d+(?:\.\d+)?|\d+/\d+)\s*(?:[{quantity_chars}]|\d+(?:\.\d+)?|\d+/\d+)?\s*(?:cup|cups|tbsp|tsp|g|grams?|ml|pinch|pinches|spray|drops?)?\b.*$",
+            value,
+            flags=re.IGNORECASE,
+        )
+    )
+
+
 def extract_ingredient_groups(value: str, recipe_name: str) -> list[dict[str, Any]]:
     if not value:
         return []
     text = normalize_extracted_text(value).replace("\x7f", "\n").replace("â– ", "\n").replace("â€¢", "\n")
     text = re.sub(re.escape(recipe_name), "", text, count=1, flags=re.IGNORECASE)
     heading_pattern = re.compile(
-        r"^(?:main ingredients|spice mix|optional flavor additions|classic vegetarian version|vegan alternative version|flavor boosters|low-carb tweaks|base dough(?: ingredients)?|dry(?: mix)?|wet(?: / binding ingredients)?|add-ins?(?: \\(after baking\\))?|cinnamon .*coating|variation\\s+\\d+\\s*:.+|classic onion akki rotti:?|carrot akki rotti:?|cabbage akki rotti:?|bottle gourd .*akki rotti:?|methi / dill akki rotti:?|onion & vegetable add-in variations.*|base technique.*)$",
+        r"^(?:main ingredients|spice mix|optional flavor additions|classic vegetarian version|vegan alternative version|flavor boosters|low-carb tweaks|base dough(?: ingredients)?(?:\s*\(.+\))?|dry(?: mix)?|wet(?: / binding ingredients)?|add-ins?(?: \\(after baking\\))?|cinnamon .*coating|variation\\s+\\d+\\s*:.+|classic onion akki rotti:?|carrot akki rotti:?|cabbage akki rotti:?|bottle gourd .*akki rotti:?|methi / dill akki rotti:?|onion & vegetable add-in variations.*|base technique.*)$",
         re.IGNORECASE,
     )
     skip_pattern = re.compile(
@@ -289,9 +303,11 @@ def extract_ingredient_groups(value: str, recipe_name: str) -> list[dict[str, An
     )
     groups: list[dict[str, Any]] = []
     current = {"section": "Ingredients", "items": []}
+    pending_item = ""
 
     def push_current() -> None:
-        nonlocal current
+        nonlocal current, pending_item
+        pending_item = ""
         if current["items"]:
             groups.append(current)
         current = {"section": "Ingredients", "items": []}
@@ -302,6 +318,7 @@ def extract_ingredient_groups(value: str, recipe_name: str) -> list[dict[str, An
             continue
         line = line.strip(" -:;")
         if not line or skip_pattern.match(line):
+            pending_item = ""
             continue
         variation_inline = re.search(
             r"(?i)\b(variation\s+\d+\s*:.+?)(?=\s+[A-Z][A-Za-z /()]+\s+[–—-]\s+|$)",
@@ -323,11 +340,17 @@ def extract_ingredient_groups(value: str, recipe_name: str) -> list[dict[str, An
             push_current()
             current = {"section": line.rstrip(":"), "items": []}
             continue
+        if looks_like_quantity(line) and pending_item:
+            current["items"].append({"item": pending_item, "amount": line})
+            pending_item = ""
+            continue
         if re.search(r"\d|[¼½¾⅓⅔⅛⅜⅝⅞]", line) or "optional" in line.lower():
             for piece in re.split(r"\s+\|\s+", line):
                 item = split_quantity_item(piece)
                 if item["item"]:
                     current["items"].append(item)
+        if not (re.search(r"\d|[Â¼Â½Â¾â…“â…”â…›â…œâ…â…ž]", line) or "optional" in line.lower()) and not re.search(r"[.!?]$", line):
+            pending_item = line
 
     push_current()
     return groups
