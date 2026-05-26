@@ -16,9 +16,75 @@
       "low carb",
       "protein",
       "yeast",
-      "yogurt) cheesy low-carb burger buns (eggless",
       "yogurt) dry ingredients almond flour \u2013 180 g pea protein isolate \u2013 50\u201355 g bamboo fiber \u2013 20\u201322 g psyllium husk powder \u2013 18 g baking powder \u2013 8 g (2 tsp) instant yeast \u2013 10 g (2.5 tsp) salt \u2013 5 g sweetener \u2013 5\u20138 g (optional) wet ingredients warm water (50\u201355\u00b0c) \u2013 360\u2013370 ml greek yogurt \u2013 90 g olive/avocado oil \u2013 30 ml (2 tbsp) apple cider vinegar \u2013 1 tbsp cheese low-moisture mozzarella \u2013 50 g (grated) activate yeast in warm water with sweetener (5\u20137 min). mix dry ingredients. add wet ingredients and mix 3\u20134 min. fold in cheese gently. rest dough 12\u201315 min. divide into 8 buns and shape gently. proof 30\u201335 min (covered). bake at 180\u00b0c (350\u00b0f) for 25\u201330 min. cool completely before slicing. tips use wet hands to shape for smooth surface. do not over-compress dough. sprinkle cheese on top before baking for crust. if buns spread",
       "yogurt) dry ingredients almond flour \u2013 180 g pea protein isolate \u2013 50\u201355 g bamboo fiber \u2013 20\u201322 g psyllium husk powder \u2013 18 g baking powder \u2013 8 g (2 tsp) instant yeast \u2013 10 g (2.5 tsp) salt \u2013 5 g sweetener \u2013 5\u20138 g (optional) wet ingredients warm water (50\u201355\u00b0c) \u2013 360\u2013370 ml greek yogurt \u2013 90 g olive/avocado oil \u2013 30 ml (2 tbsp) apple cider vinegar \u2013 1 tbsp cheese low-moisture mozzarella \u2013 50 g (grated) method activate yeast in warm water with sweetener (5\u20137 min). mix dry ingredients. add wet ingredients and mix 3\u20134 min. fold in cheese gently. rest dough 12\u201315 min. divide into 8 buns and shape gently. proof 30\u201335 min (covered). bake at 180\u00b0c (350\u00b0f) for 25\u201330 min. cool completely before slicing. tips use wet hands to shape for smooth surface. do not over-compress dough. sprinkle cheese on top before baking for crust. if buns spread"
+    ]
+  },
+  {
+    "recipe_id": "r_7eab1a29b7",
+    "recipe_name": "Crispy Low-Carb Eggless Focaccia (Quarter Baking Sheet Version)",
+    "source_file": "C:\\lowcarb-recipe-chatbot\\backend\\data\\raw\\pdf\\Crispy_LowCarb_Focaccia_Variations.pdf",
+    "tags": [
+      "eggless",
+      "low carb",
+      "protein"
+    ],
+    "bot_keywords": [
+      "1 tbsp apple cider vinegar",
+      "1 tbsp thick greek yogurt or 1 tbsp coconut cream 1. line quarter baking sheet with parchment and lightly oil it. 2. mix all dry ingredients thoroughly. 3. add wet ingredients and mix well. 4. rest batter 5\u20137 minutes until thickened. 5. spread thinly (",
+      "190\u2013210ml warm water optional:",
+      "3 tbsp olive oil",
+      "chili flakes",
+      "cracked black pepper",
+      "crispy low-carb eggless focaccia (quarter baking sheet version) amount almond flour 100g pea protein isolate 50g bamboo fiber 10g flaxmeal 14g (2 tbsp) psyllium husk powder 14g (2 tbsp) baking powder 1 tsp oregano 1 tsp salt to taste wet ingredients:",
+      "dried thyme possible variations 1. mediterranean version",
+      "eggless",
+      "extra oregano",
+      "extra rosemary",
+      "feta crumble after baking 2. indian masala version",
+      "green chilies",
+      "jeera",
+      "kasuri methi",
+      "low carb",
+      "olives",
+      "protein",
+      "remove from parchment and bake directly on rack for 2\u20135 more minutes. 9. cool fully on wire rack before slicing. no-garlic version omit garlic powder completely. suggested additions:",
+      "sun-dried tomatoes",
+      "\u00bd tsp crushed fennel seeds",
+      "\u2013\u00bd inch thick). 6. add toppings and drizzle olive oil. 7. bake at 375\u00b0f / 190\u00b0c for 20\u201325 minutes. 8. for extra crispness"
+    ]
+  },
+  {
+    "recipe_id": "r_4e3b59e52f",
+    "recipe_name": "Crispy Yeasted Low-Carb Focaccia (Quarter Baking Sheet Version)",
+    "source_file": "C:\\lowcarb-recipe-chatbot\\backend\\data\\raw\\pdf\\Yeasted_LowCarb_Focaccia.pdf",
+    "tags": [
+      "low carb",
+      "protein"
+    ],
+    "bot_keywords": [
+      "1 tbsp apple cider vinegar",
+      "1 tbsp thick greek yogurt or 1 tbsp coconut cream toppings",
+      "1 to 1\u00bc tsp instant yeast",
+      "1 tsp baking powder",
+      "1 tsp honey or sugar or inulin wet ingredients:",
+      "1 tsp oregano",
+      "100g almond flour",
+      "10g bamboo fiber",
+      "14g flaxmeal (2 tbsp)",
+      "14g psyllium husk powder (2 tbsp)",
+      "190\u2013210ml warm water optional:",
+      "3 tbsp olive oil",
+      "30g grated parmesan",
+      "50g pea protein isolate",
+      "chili flakes optional",
+      "generous olive oil drizzle 1. line quarter baking sheet with parchment and lightly oil. 2. mix all dry ingredients thoroughly. 3. add warm water",
+      "low carb",
+      "protein",
+      "rosemary",
+      "salt to taste",
+      "sesame seeds",
+      "thinly sliced olives"
     ]
   },
   {
@@ -295,13 +361,12 @@
       "protein"
     ],
     "bot_keywords": [
-      "12 slices dry ingredients almond flour \u2014 180 g pea protein isolate \u2014 58 g bamboo fiber \u2014 20 g psyllium husk powder \u2014 18 g baking powder \u2014 8 g instant yeast \u2014 10 g salt \u2014 6 g sweetener \u2014 5 g optional wet ingredients warm water \u2014 365 ml greek yogurt \u2014 85 g oil \u2014 35 ml apple cider vinegar \u2014 15 ml 1. activate yeast in warm water 5 min. 2. mix dry ingredients. 3. add wet ingredients and mix 4 min. 4. rest dough 10 min. 5. transfer to lined loaf pan. proofing oven light on: 16\u201318 min room temp: 22\u201325 min slight puff only. bake 340\u00b0f for 20 min. then 350\u00b0f for 35\u201340 min. tent foil if needed. cooling 15 min in pan",
       "12 slices dry ingredients almond flour \u2014 180 g pea protein isolate \u2014 58 g bamboo fiber \u2014 20 g psyllium husk powder \u2014 18 g baking powder \u2014 8 g instant yeast \u2014 10 g salt \u2014 6 g sweetener \u2014 5 g optional wet ingredients warm water \u2014 365 ml greek yogurt \u2014 85 g oil \u2014 35 ml apple cider vinegar \u2014 15 ml method 1. activate yeast in warm water 5 min. 2. mix dry ingredients. 3. add wet ingredients and mix 4 min. 4. rest dough 10 min. 5. transfer to lined loaf pan. proofing oven light on: 16\u201318 min room temp: 22\u201325 min slight puff only. bake 340\u00b0f for 20 min. then 350\u00b0f for 35\u201340 min. tent foil if needed. cooling 15 min in pan",
       "12 slices.",
       "12 slices. final sandwich loaf v3 refined for even crumb",
       "bread",
       "even crumb",
-      "final sandwich loaf v3 refined for even crumb",
+      "final sandwich loaf v3 dry ingredients almond flour \u2014 180 g pea protein isolate \u2014 58 g bamboo fiber \u2014 20 g psyllium husk powder \u2014 18 g baking powder \u2014 8 g instant yeast \u2014 10 g salt \u2014 6 g sweetener \u2014 5 g optional wet ingredients warm water \u2014 365 ml greek yogurt \u2014 85 g oil \u2014 35 ml apple cider vinegar \u2014 15 ml 1. activate yeast in warm water 5 min. 2. mix dry ingredients. 3. add wet ingredients and mix 4 min. 4. rest dough 10 min. 5. transfer to lined loaf pan. proofing oven light on: 16\u201318 min room temp: 22\u201325 min slight puff only. bake 340\u00b0f for 20 min. then 350\u00b0f for 35\u201340 min. tent foil if needed. cooling 15 min in pan",
       "good toast",
       "low carb",
       "no sink",
@@ -485,6 +550,41 @@
     ]
   },
   {
+    "recipe_id": "r_d8d1b3bdc5",
+    "recipe_name": "Low-Carb Eggless Tea Loaf Collection",
+    "source_file": "C:\\lowcarb-recipe-chatbot\\backend\\data\\raw\\pdf\\low_carb_tea_loaf_collection.pdf",
+    "tags": [
+      "eggless",
+      "low carb",
+      "protein"
+    ],
+    "bot_keywords": [
+      "allulose monk fruit blend: \u00bd cup (100g approx)",
+      "almond flour: 1\u00be cups (175g)",
+      "and egg replacer mixture. 7. fold in chocolate chips and pecans. 8. rest batter 3\u20134 minutes. 9. transfer to loaf pan. 10. bake 55\u201370 minutes. 11. tent loosely with foil if top browns too quickly. 12. cool 20\u201325 minutes in pan before cooling fully. variations",
+      "baking powder: 2 tsp (8g)",
+      "bob\u2019s red mill egg replacer: 3 tbsp (24g)",
+      "chia gel",
+      "chopped pecans: 60g",
+      "coconut flour: \u00bc cup (28g)",
+      "cup (160ml) egg replacement",
+      "cup (35g)",
+      "eggless",
+      "ground chia seeds: \u00bc cup (40g)",
+      "low carb",
+      "low-carb eggless tea loaf collection dry ingredients",
+      "melted butter: 108g",
+      "optional chopped pistachios: 5\u20136 1. preheat oven to 325\u00b0f / 163\u00b0c. 2. line loaf pan with parchment. 3. prepare chia gel and rest 10\u201315 minutes. 4. prepare egg replacer mixture and rest 1\u20132 minutes. 5. mix dry ingredients. 6. add butter",
+      "optional cinnamon: \u00bd tsp mix-ins",
+      "protein",
+      "salt: \u00bd tsp (3g) chia gel",
+      "sugar-free chocolate chips: 85g",
+      "vanilla",
+      "vanilla extract: 1 tsp (5ml)",
+      "water: 6 tbsp (90ml) wet ingredients"
+    ]
+  },
+  {
     "recipe_id": "r_e92e4eef89",
     "recipe_name": "Low-Carb Sandwich Loaf System (Eggless)",
     "source_file": "C:\\lowcarb-recipe-chatbot\\backend\\data\\raw\\pdf\\Hi-ProteinBreadLoaf.pdf",
@@ -554,7 +654,7 @@
       "70g almond flour",
       "70ml half-and-half or 40ml heavy cream + 30ml water",
       "70\u201380g fresh blueberries",
-      "blueberry lemon protein snack cake (6x6 glass pan) blueberry lemon protein snack cake (6x6 glass pan) final version sized specifically for your 6x6 glass pan. yes\u2014use parchment paper for easy removal and cleaner slicing. pan prep use a 6x6 glass baking dish. line with parchment paper with slight overhang on two sides. lightly grease parchment and exposed sides. dry ingredients 70g almond flour 36g unflavored whey protein isolate 16g coconut flour 24\u201326g powdered monkfruit/allulose sweetener 2 tsp baking powder 1/4 tsp salt wet ingredients 120g full-fat greek yogurt 70ml half-and-half or 40ml heavy cream + 30ml water 44g melted butter 2 tbsp fresh lemon juice 2\u20133 tsp fresh lemon zest 1 tsp vanilla extract add-ins 70\u201380g fresh blueberries optional sliced almonds for topping 1. preheat oven to 325\u00b0f. 2. prepare parchment-lined pan. 3. whisk dry ingredients well. 4. whisk wet ingredients separately. 5. combine wet + dry gently until just mixed. 6. rest batter for 2 minutes. 7. toss blueberries with 1 tsp almond flour and fold in gently. 8. spread evenly in pan. 9. bake 25\u201332 minutes (check at 24\u201325 min). 10. cool in pan for 20\u201330 minutes before slicing. yield 6 larger squares or 9 smaller squares. texture goal moist tea cake bars with bright lemon flavor and juicy blueberry pockets. blueberry lemon protein snack cake (6x6 glass pan) final version sized specifically for your 6x6 glass pan. yes\u2014use parchment paper for easy removal and cleaner slicing. pan prep use a 6x6 glass baking dish. line with parchment paper with slight overhang on two sides. lightly grease parchment and exposed sides. dry ingredients",
+      "blueberry lemon protein snack cake (6x6 glass pan) dry ingredients 70g almond flour 36g unflavored whey protein isolate 16g coconut flour 24\u201326g powdered monkfruit/allulose sweetener 2 tsp baking powder 1/4 tsp salt wet ingredients 120g full-fat greek yogurt 70ml half-and-half or 40ml heavy cream + 30ml water 44g melted butter 2 tbsp fresh lemon juice 2\u20133 tsp fresh lemon zest 1 tsp vanilla extract add-ins 70\u201380g fresh blueberries optional sliced almonds for topping 1. preheat oven to 325\u00b0f. 2. prepare parchment-lined pan. 3. whisk dry ingredients well. 4. whisk wet ingredients separately. 5. combine wet + dry gently until just mixed. 6. rest batter for 2 minutes. 7. toss blueberries with 1 tsp almond flour and fold in gently. 8. spread evenly in pan. 9. bake 25\u201332 minutes (check at 24\u201325 min). 10. cool in pan for 20\u201330 minutes before slicing. yield 6 larger squares or 9 smaller squares. texture goal moist tea cake bars with bright lemon flavor and juicy blueberry pockets. blueberry lemon protein snack cake (6x6 glass pan) final version sized specifically for your 6x6 glass pan. yes\u2014use parchment paper for easy removal and cleaner slicing. pan prep use a 6x6 glass baking dish. line with parchment paper with slight overhang on two sides. lightly grease parchment and exposed sides. dry ingredients",
       "cake",
       "low carb",
       "optional sliced almonds for topping method 1. preheat oven to 325\u00b0f. 2. prepare parchment-lined pan. 3. whisk dry ingredients well. 4. whisk wet ingredients separately. 5. combine wet + dry gently until just mixed. 6. rest batter for 2 minutes. 7. toss blueberries with 1 tsp almond flour and fold in gently. 8. spread evenly in pan. 9. bake 25\u201332 minutes (check at 24\u201325 min). 10. cool in pan for 20\u201330 minutes before slicing. yield 6 larger squares or 9 smaller squares. texture goal moist tea cake bars with bright lemon flavor and juicy blueberry pockets.",
@@ -762,15 +862,16 @@
       "12\u201313g powdered monkfruit/allulose sweetener",
       "18g unflavored grass-fed whey isolate",
       "2 jumbo muffin cups",
+      "22g melted butter",
       "35g almond flour",
+      "35ml half-and-half (or 20ml heavy cream + 15ml water)",
       "60g full-fat greek yogurt",
       "8g coconut flour",
       "and actually enjoyable. dry ingredients",
-      "and actually enjoyable. dry ingredients 35g almond flour 18g unflavored grass-fed whey isolate 8g coconut flour 12\u201313g powdered monkfruit/allulose sweetener 1 tsp baking powder pinch of salt 1 tsp poppy seeds (optional) wet ingredients 60g full-fat greek yogurt 35ml half-and-half (or 20ml heavy cream + 15ml water) 22g melted butter 1 tbsp fresh lemon juice 1\u20131\u00bd tsp fresh lemon zest \u00bd tsp vanilla extract optional add-ins few blueberries sliced almonds tiny pinch cardamom 1. preheat oven to 340\u00b0f (170\u00b0c). grease 2 ramekins",
       "and far more satisfying than standard lemon loaf. eggless low-carb lemon protein tea cake (whey isolate version) a balanced healthy dessert: lower carb",
       "cake",
       "eggless",
-      "eggless low-carb lemon protein tea cake (whey isolate version) eggless low-carb lemon protein tea cake (whey isolate version) a balanced healthy dessert: lower carb",
+      "eggless low-carb lemon protein tea cake (whey isolate version) dry ingredients 35g almond flour 18g unflavored grass-fed whey isolate 8g coconut flour 12\u201313g powdered monkfruit/allulose sweetener 1 tsp baking powder pinch of salt 1 tsp poppy seeds (optional) wet ingredients 60g full-fat greek yogurt 35ml half-and-half (or 20ml heavy cream + 15ml water) 22g melted butter 1 tbsp fresh lemon juice 1\u20131\u00bd tsp fresh lemon zest \u00bd tsp vanilla extract optional add-ins few blueberries sliced almonds tiny pinch cardamom 1. preheat oven to 340\u00b0f (170\u00b0c). grease 2 ramekins",
       "few drops lemon juice",
       "low carb",
       "moderate protein",
@@ -786,8 +887,7 @@
     "source_file": "C:\\lowcarb-recipe-chatbot\\backend\\data\\raw\\pdf\\Savory_Crispy_Low_Carb_Indian_Snack_Cookies.pdf",
     "tags": [
       "eggless",
-      "low carb",
-      "travel snacks"
+      "low carb"
     ],
     "bot_keywords": [
       "and crisp with clean snap.",
@@ -796,7 +896,7 @@
       "curry leaf: add 1 tsp finely crushed dried curry leaves.",
       "dry",
       "eggless",
-      "eggless low-carb savory crispy cookies flaxmeal & almond flour indian snack\u2013style variations one-bake crisp base ingredients almond flour \u2013 1 cup flaxmeal (golden preferred) \u2013 \u00bc cup unsalted butter or ghee",
+      "eggless low-carb savory crispy cookies base ingredients almond flour \u2013 1 cup flaxmeal (golden preferred) \u2013 \u00bc cup unsalted butter or ghee",
       "flaxmeal",
       "flipping once halfway",
       "inch) between parchment sheets. \u2013 cut into desired shapes or score for breaking later. \u2013 bake 18\u201322 minutes",
@@ -811,7 +911,6 @@
       "spices",
       "target texture is thin",
       "thicker for cookie-style bite.",
-      "travel snacks",
       "until golden and dry. \u2013 cool completely to achieve full crispness. indian snack variations (structure unchanged)"
     ]
   },
@@ -911,7 +1010,7 @@
       "if dough feels too sticky: chill dough for 10\u201315 minutes approx macros per biscotti (assuming 20 pieces): ~95\u2013110 calories ~4\u20135g protein ~2\u20134g net carbs flavor variations",
       "lemon almond",
       "low carb",
-      "low-carb almond whey biscotti (eggless) a refined version of your proven biscotti recipe with a modest protein boost from whey isolate while keeping the same crisp texture. dry ingredients 210g almond flour 30g unflavored whey protein isolate 1 tsp baking powder 1/4 tsp salt flax egg 2 tbsp flaxmeal 6 tbsp water mix and let sit for 5\u201310 minutes until gelled. wet ingredients 60g melted butter 75g powdered sweetener 1 tbsp lemon zest or orange zest 1 tsp vanilla extract mix-ins 60g chopped nuts 60g goji berries or sugar-free chocolate chips 1. preheat oven to 325\u00b0f and line tray with parchment. 2. prepare flax egg and let it gel. 3. whisk butter",
+      "low-carb almond whey biscotti (eggless) dry ingredients 210g almond flour 30g unflavored whey protein isolate 1 tsp baking powder 1/4 tsp salt flax egg 2 tbsp flaxmeal 6 tbsp water mix and let sit for 5\u201310 minutes until gelled. wet ingredients 60g melted butter 75g powdered sweetener 1 tbsp lemon zest or orange zest 1 tsp vanilla extract mix-ins 60g chopped nuts 60g goji berries or sugar-free chocolate chips 1. preheat oven to 325\u00b0f and line tray with parchment. 2. prepare flax egg and let it gel. 3. whisk butter",
       "orange pistachio goji",
       "protein",
       "sweetener",
@@ -1207,6 +1306,70 @@
       "small squeeze of lemon juice low-carb tweaks",
       "tiny amount of white miso for umami depth",
       "use heavy cream diluted with water instead of milk for lower carbs."
+    ]
+  },
+  {
+    "recipe_id": "r_4daf5e5c79",
+    "recipe_name": "High-Protein Andhra Pappu Variations",
+    "source_file": "C:\\lowcarb-recipe-chatbot\\backend\\data\\raw\\pdf\\High_Protein_Andhra_Pappu_Recipes.pdf",
+    "tags": [
+      "indian",
+      "protein"
+    ],
+    "bot_keywords": [
+      "1 tbsp hemp hearts + 1 tsp flax meal after simmering",
+      "100g tofu cubes added during simmering",
+      "and 1/2 cup water. 5. pressure cook on medium-high heat for 5\u20136 whistles. 6. allow pressure to settle naturally. 7. mash the cooked lentils and combine with the tomato mixture. 8. simmer for a few minutes and prepare the tadka. tadka use 2 tsp ghee + 1 tsp sesame oil (or 1 tbsp avocado oil). add:",
+      "bottle gourd",
+      "cabbage",
+      "chilli flakes or crushed red chillies optional: crushed garlic and fresh coriander. protein & nutrition enhancements (choose 1\u20132)",
+      "curry leaves",
+      "green chillies",
+      "high-protein andhra pappu variations base ingredients 1/4 cup toor dal + 1/4 cup moong dal (or preferred combination) 4\u20135 chopped tomatoes 2 slit green chillies curry leaves 1/4 tsp turmeric salt to taste water as needed 1. wash and soak the lentils for at least 1 hour. hot water soaking may be used. 2. drain and rinse once more. 3. add lentils to the pressure cooker with enough water to cover them. 4. place a trivet inside the cooker and keep another vessel containing tomatoes",
+      "hing",
+      "indian",
+      "jeera",
+      "mushrooms",
+      "mustard seeds",
+      "protein",
+      "ridge gourd",
+      "salt",
+      "serve with 1/2 to 3/4 cup greek yogurt",
+      "small pinch methi seeds",
+      "spinach",
+      "turmeric",
+      "zucchini"
+    ]
+  },
+  {
+    "recipe_id": "r_5439d2e6e3",
+    "recipe_name": "Light Lemon Coriander Soup with Saut\u00e9ed Vegetable Options",
+    "source_file": "C:\\lowcarb-recipe-chatbot\\backend\\data\\raw\\pdf\\Lemon_Coriander_Soup_Options.pdf",
+    "tags": [
+      "indian"
+    ],
+    "bot_keywords": [
+      "1 tsp grated ginger",
+      "1 tsp olive oil or ghee",
+      "1 tsp roasted cumin powder",
+      "1\u20132 green chilies slit (optional)",
+      "4 cups water",
+      "and optional hing. 3. saut\u00e9 gently for 30\u201360 seconds without browning. 4. add water",
+      "and roasted cumin. 5. simmer gently for 8\u201310 minutes. 6. turn off heat and add coriander leaves/stems and lemon juice. 7. cover and rest 2\u20133 minutes before serving. flavor enhancement without vegetable stock easy ways to deepen flavor without broth or stock:",
+      "curry leaves",
+      "extra coriander stems while simmering",
+      "few curry leaves",
+      "freshly crushed black pepper",
+      "green chili",
+      "indian",
+      "juice of \u00bd to 1 lemon",
+      "light lemon coriander soup with saut\u00e9ed vegetable options",
+      "pepper",
+      "pinch hing",
+      "roasted cumin powder",
+      "salt",
+      "salt to taste",
+      "white pepper for restaurant-style flavor 1. heat oil or ghee. 2. add ginger"
     ]
   },
   {
