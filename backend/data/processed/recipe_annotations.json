@@ -226,6 +226,41 @@
     ]
   },
   {
+    "recipe_id": "r_ec2ffa4f77",
+    "recipe_name": "Eggless Low-Carb Pita Bread with Dips",
+    "source_file": "C:\\lowcarb-recipe-chatbot\\backend\\data\\raw\\pdf\\Eggless_Low_Carb_Pita_With_Dips.pdf",
+    "tags": [
+      "bread",
+      "eggless",
+      "low carb",
+      "protein"
+    ],
+    "bot_keywords": [
+      "add 1 tbsp more yogurt. for crispier pita chips",
+      "add gradually) 1/2 tsp salt pita bread whisk almond flour",
+      "allow it to rest before adding more flour. for softer pita",
+      "and salt. add greek yogurt and olive oil. gradually add warm water until soft dough forms. rest dough for 10 minutes. divide into 4 balls. roll between parchment sheets into 1/4-inch circles. cook on heated pan 1\u20132 minutes per side until golden spots appear. alternatively bake at 375\u00b0f / 190\u00b0c for 10\u201312 minutes. rest 5 minutes before serving. pita bread tips & variations do not add all water at once",
+      "and salt. chill 30 minutes before serving. eggplant dip tips & variations roasting directly over flame gives best smoky flavor. drain excess liquid from eggplant for thicker dip. add tahini for middle eastern-style variation. mix in roasted walnuts or almonds for richer texture. can be served warm or chilled. mint gives fresher flavor while cilantro gives earthier taste. garlic\u2013herb butter 3 tbsp softened unsalted butter 1 clove garlic",
+      "baking powder",
+      "bread",
+      "cumin",
+      "eggless",
+      "eggless low-carb pita bread with dips 1 cup fine blanched almond flour 2 tbsp psyllium husk powder 1 tsp baking powder 3 tbsp full-fat greek yogurt 1 tbsp olive oil 1/2 cup warm water (approx.",
+      "flexible low-carb pita bread paired with creamy roasted eggplant yogurt dip and flavorful garlic-herb butter. these recipes are vegetarian",
+      "garlic",
+      "grated (optional) 1 tbsp chopped cilantro or mint salt to taste optional: chili flakes or roasted green chili eggplant dip method roast eggplant until skin is charred and flesh becomes soft. cool slightly and scoop out flesh. mash and mix with yogurt",
+      "herbs",
+      "low carb",
+      "minced 1/2 tsp dried oregano or italian herbs 1 tsp chopped fresh parsley pinch of salt 1/2 tsp olive oil (optional) garlic\u2013herb butter method mix all ingredients until smooth and creamy. brush over warm pita. can refrigerate up to 5 days. garlic butter tips & variations roasted garlic creates milder sweeter flavor. can add chili flakes for spicy version. add grated vegetarian parmesan for richer taste. fresh dill or basil also work beautifully. can be melted and used as dipping butter. serving suggestions serve pita warm with both dips. use for wraps or mini sandwiches. pair with roasted vegetables or paneer. can be cut into wedges and toasted into pita chips. approximate nutrition (per serving combination) calories: ~220\u2013280 protein: ~8\u201310g net carbs: ~5\u20137g fat: ~18\u201322g fiber: ~5\u20137g storage pita keeps refrigerated 3\u20134 days. eggplant dip keeps 2\u20133 days chilled. garlic butter keeps 5 days refrigerated. pita can be reheated on skillet for softness. eggless low-carb pita bread with dips a soft",
+      "olive oil",
+      "or za\u2019atar seasoning for flavor variations. can be toasted directly over flame briefly for slight puffing. a little mozzarella can improve flexibility if dairy is acceptable. eggplant yogurt dip (baingan raita style) 1 medium eggplant 1/2 cup thick yogurt (greek yogurt or hung curd) 1 tsp olive oil 1/2 tsp cumin powder 1/2 garlic clove",
+      "protein",
+      "psyllium absorbs moisture gradually. if dough becomes sticky",
+      "psyllium husk",
+      "roll thinner and bake longer. add garlic powder"
+    ]
+  },
+  {
     "recipe_id": "r_e17e9c853d",
     "recipe_name": "Eggless Moderate Low-Carb Lentil Focaccia",
     "source_file": "C:\\lowcarb-recipe-chatbot\\backend\\data\\raw\\pdf\\Lentil_Focaccia_Recipe.pdf",
@@ -321,6 +356,76 @@
       "protein",
       "seeded multigrain: add 2 tbsp sunflower seeds + 1 tbsp pumpkin seeds to dough.",
       "sweetener"
+    ]
+  },
+  {
+    "recipe_id": "r_ad5292a731",
+    "recipe_name": "High-Protein Low-Carb Pita Bread (Almond Flour Version)",
+    "source_file": "C:\\lowcarb-recipe-chatbot\\backend\\data\\raw\\pdf\\High_Protein_Low_Carb_Pita_Almond_Version.pdf",
+    "tags": [
+      "bread",
+      "low carb",
+      "protein"
+    ],
+    "bot_keywords": [
+      "1 tbsp olive oil",
+      "1 tbsp psyllium husk powder",
+      "1 tsp baking powder",
+      "1/2 tsp salt",
+      "1/2\u20133/4 cup warm water (add gradually)",
+      "1/4 cup pea protein isolate",
+      "2 tbsp oat fiber or bamboo fiber",
+      "3 tbsp full-fat greek yogurt",
+      "3/4 cup fine blanched almond flour",
+      "add yogurt and olive oil.",
+      "bread",
+      "divide into 4 balls.",
+      "gradually add warm water until soft dough forms.",
+      "high-protein low-carb pita bread (almond flour version)",
+      "low carb",
+      "optional: garlic powder",
+      "oregano",
+      "protein",
+      "rest dough 10\u201315 minutes for hydration.",
+      "roll between parchment sheets into circles.",
+      "sesame seeds",
+      "whisk all dry ingredients together.",
+      "za\u2019atar"
+    ]
+  },
+  {
+    "recipe_id": "r_4a835da947",
+    "recipe_name": "High-Protein Pita Bread (Lentil Flour Version)",
+    "source_file": "C:\\lowcarb-recipe-chatbot\\backend\\data\\raw\\pdf\\High_Protein_Pita_Lentil_Flour_Version.pdf",
+    "tags": [
+      "bread",
+      "low carb",
+      "protein"
+    ],
+    "bot_keywords": [
+      "1 tbsp olive oil",
+      "1 tbsp psyllium husk powder",
+      "1 tsp baking powder",
+      "1/2 cup red lentil flour or chickpea flour",
+      "1/2 tsp salt",
+      "1/2\u20133/4 cup warm water",
+      "1/4 cup pea protein isolate",
+      "2 tbsp oat fiber or bamboo fiber",
+      "3 tbsp greek yogurt",
+      "add yogurt and olive oil.",
+      "allow dough to rest 10\u201315 minutes.",
+      "bread",
+      "cook on medium-hot skillet until golden spots appear. tips & tweaks",
+      "divide into 4 portions.",
+      "garlic powder",
+      "herbs",
+      "high-protein pita bread (lentil flour version)",
+      "low carb",
+      "mix all dry ingredients thoroughly.",
+      "optional: cumin",
+      "protein",
+      "roll gently between parchment sheets.",
+      "slowly add warm water to form soft dough."
     ]
   },
   {
@@ -621,6 +726,45 @@
     ]
   },
   {
+    "recipe_id": "r_e1b002a970",
+    "recipe_name": "Eggless Low-Carb Bhapa-Doi Style Cheesecake",
+    "source_file": "C:\\lowcarb-recipe-chatbot\\backend\\data\\raw\\pdf\\HealthyBhapaDoi-Indiancheesecake.pdf",
+    "tags": [
+      "cake",
+      "eggless",
+      "indian",
+      "low carb",
+      "protein"
+    ],
+    "bot_keywords": [
+      "1 cup full-fat greek yogurt (thick)",
+      "1 tsp lemon juice (optional for tang) steamed version \u2014 traditional bhapa doi texture",
+      "1.5 tsp arrowroot flour",
+      "1/2 cup monkfruit-erythritol sweetener",
+      "1/4 cup fresh cream (optional but recommended)",
+      "1/4 tsp cardamom powder",
+      "150\u2013200 g paneer",
+      "add greek yogurt",
+      "and lemon juice.",
+      "arrowroot",
+      "blend paneer until completely smooth.",
+      "blended smooth",
+      "cake",
+      "cardamom",
+      "cream",
+      "eggless",
+      "eggless low-carb bhapa-doi style cheesecake",
+      "few saffron strands (optional)",
+      "indian",
+      "low carb",
+      "pinch of salt",
+      "protein",
+      "saffron",
+      "salt",
+      "sweetener"
+    ]
+  },
+  {
     "recipe_id": "r_83cbff83fe",
     "recipe_name": "Eggless Low-Carb Chewy Plum Cake",
     "source_file": "C:\\lowcarb-recipe-chatbot\\backend\\data\\raw\\pdf\\Chewy_Low_Carb_Pluma_Cake_Psyllium_Variations.pdf",
@@ -723,6 +867,76 @@
       "thicker for cookie-style bite.",
       "travel snacks",
       "until golden and dry. \u2013 cool completely to achieve full crispness. indian snack variations (structure unchanged)"
+    ]
+  },
+  {
+    "recipe_id": "r_6c11d126d6",
+    "recipe_name": "Garlic Parmesan Sauce (Vegetarian & Vegan-Friendly Options)",
+    "source_file": "C:\\lowcarb-recipe-chatbot\\backend\\data\\raw\\pdf\\Garlic_Parmesan_Sauce_Vegetarian_Vegan_Options.pdf",
+    "tags": [
+      "cake",
+      "indian",
+      "low carb",
+      "protein"
+    ],
+    "bot_keywords": [
+      "add almond flour and stir continuously until absorbed.",
+      "add garlic and saut\u00e9 about 30 seconds until fragrant.",
+      "add parmesan cheese or nutritional yeast mixture.",
+      "adjust salt and pepper to taste. flavor boosters",
+      "bring to a gentle simmer.",
+      "cake",
+      "cauliflower steaks",
+      "cook for 30\u201360 seconds to remove raw flour taste.",
+      "garlic parmesan sauce (vegetarian & vegan-friendly options) garlic parmesan sauce (vegetarian & vegan-friendly options) a creamy garlic sauce that works beautifully with pasta",
+      "grilled paneer",
+      "indian",
+      "low carb",
+      "melt butter (or vegan butter/oil) in a skillet over medium heat.",
+      "mince the garlic finely.",
+      "minced 1 ounce vegetarian parmesan cheese (microbial rennet version) 2 tbsp unsalted butter 2 tbsp almond flour 1 1/2 cups half-and-half or whole milk 1/2 cup vegetable broth 1/2 tsp kosher salt 1/4 tsp black pepper vegan alternative version 6 garlic cloves",
+      "minced 3 tbsp nutritional yeast 1 tbsp almond flour 1 tbsp vegan butter or olive oil 1 1/2 cups unsweetened almond milk or cashew milk 1/2 cup vegetable broth 1 tbsp soaked blended cashews or 1 tbsp dairy-free cream cheese (optional for richness) 1/2 tsp kosher salt 1/4 tsp black pepper optional: 1 tsp lemon juice for brightness",
+      "or low-carb casseroles. this version includes both vegetarian parmesan options and a fully vegan alternative. classic vegetarian version 6 garlic cloves",
+      "pinch of mustard powder for deeper cheesy flavor",
+      "protein",
+      "roasted vegetables",
+      "simmer 2\u20133 minutes until sauce thickens and coats the back of a spoon.",
+      "slowly add milk and vegetable broth while stirring.",
+      "tiny amount of white miso for umami depth",
+      "zucchini noodles"
+    ]
+  },
+  {
+    "recipe_id": "r_4795e4879f",
+    "recipe_name": "Healthy No-Added-Sugar Nuts, Seeds & Berry",
+    "source_file": "C:\\lowcarb-recipe-chatbot\\backend\\data\\raw\\pdf\\Healthy_Dried_Fruit_Nuts_Seed_Barfi_Laddoo.pdf",
+    "tags": [
+      "cake",
+      "protein"
+    ],
+    "bot_keywords": [
+      "and khoa or peanut butter. this version is highly customizable",
+      "and works beautifully as barfi",
+      "cake",
+      "cake bites",
+      "cashews",
+      "coconut",
+      "fiber-rich",
+      "healthy no-added-sugar nuts",
+      "hemp",
+      "nuts",
+      "optional berries",
+      "or laddoos. core ingredients 1 cup soft deseeded dates 1/4\u20131/2 cup goji berries or dried cranberries/blueberries (unsweetened preferred) 3 cups mixed roasted nuts (almonds",
+      "peanuts) 1/2 cup mixed roasted seeds (pumpkin",
+      "pecans",
+      "pistachios",
+      "protein",
+      "protein-rich",
+      "seeds",
+      "seeds & berry barfi / laddoo a naturally sweetened festive-style indian sweet made with dates",
+      "sesame",
+      "sunflower",
+      "walnuts"
     ]
   },
   {
@@ -994,6 +1208,37 @@
     ]
   },
   {
+    "recipe_id": "r_b41eedd4d8",
+    "recipe_name": "Curry Powder Masala (Special Dhaniya Podi)",
+    "source_file": "C:\\lowcarb-recipe-chatbot\\backend\\data\\raw\\pdf\\Curry_Powder_Masala_Dhaniya_Podi.pdf",
+    "tags": [
+      "indian"
+    ],
+    "bot_keywords": [
+      "2 cups coriander seeds",
+      "add more kalpasi. mild version: reduce red chilies and pepper. spicy version: add kashmiri and guntur chilies combination. coconut version: add dry roasted desiccated coconut (shorter shelf life). low-carb rich version: add extra curry leaves and pepper for stronger flavor without carbs. sambar-style version: add roasted toor dal and chana dal. usage suggestions use in kuzhambu and gravies. mix into poriyal or vegetable stir-fries. add to curries",
+      "and dry masalas. this version balances warmth",
+      "and earthy complexity while remaining versatile for everyday cooking. ingredients",
+      "and fenugreek separately for about 1 minute each. lightly roast cinnamon",
+      "and kalpasi until fragrant. roast cashews until lightly golden. finally roast curry leaves until completely dry and crisp. cool all ingredients completely before grinding. grinding instructions grind all roasted ingredients together into a fine or slightly coarse powder based on preference. add turmeric powder after grinding if using. allow powder to cool fully before storing. storage tips store in airtight glass jars. keep away from moisture. best flavor within 2\u20133 months. can refrigerate for longer freshness. use a dry spoon always. flavor profile notes coriander seeds create the main body and earthy sweetness. fenugreek gives slight bitterness and curry depth. kalpasi adds restaurant-style aroma. cashews provide subtle richness and smoothness. curry leaves add classic south indian flavor. variations chettinad style: increase pepper and fennel",
+      "and masala rice. can be sprinkled over roasted vegetables. works well in marinades for paneer or tofu. approximate nutrition (per tablespoon) calories: ~28\u201335 net carbs: ~2\u20133g protein: ~1g fat: ~1\u20132g high in antioxidants and aromatic oils. important tips always roast on low-medium heat to avoid bitterness. do not grind while ingredients are hot. over-roasting fenugreek can make the masala bitter. curry leaves must become fully crisp before grinding. for smoother texture use a spice grinder in batches. curry powder masala (special dhaniya podi) a deeply aromatic south indian-style coriander-based curry powder that works beautifully for kuzhambu",
+      "bay leaf",
+      "cardamom",
+      "cloves",
+      "cumin",
+      "curries",
+      "curry powder masala (special dhaniya podi) 2 cups coriander seeds 6 dried red chilies (adjust to heat preference) 1 tbsp whole black pepper 1 tbsp cumin seeds 1 tbsp fennel seeds (saunf) 1/2 tsp fenugreek seeds 1-inch cinnamon stick 4 cloves 1 bay leaf 3 green cardamom pods 1 small star anise 1 small piece kalpasi (stone flower) 10 cashew nuts 1 cup loosely packed curry leaves optional: 1 tsp turmeric powder dry roasting use a heavy-bottomed kadai or skillet on low to medium heat. dry roast coriander seeds first for 4\u20135 minutes until aromatic and lightly deeper in color. remove and cool. roast red chilies carefully for 1\u20132 minutes without burning. roast pepper",
+      "fennel",
+      "gravies",
+      "indian",
+      "kootu",
+      "nuttiness",
+      "spice",
+      "star anise",
+      "vegetable stir-fries"
+    ]
+  },
+  {
     "recipe_id": "r_c9d0c44464",
     "recipe_name": "Low-Carb Akki Rotti \u2013 All Variations (with Onion & Vegetables)",
     "source_file": "C:\\lowcarb-recipe-chatbot\\backend\\data\\raw\\pdf\\Low_Carb_Akki_Rotti_All_Variations_With_Veg.pdf",
@@ -1021,6 +1266,41 @@
       "onion optional",
       "onion \u2013 2 tbsp (optional) cabbage akki rotti:",
       "press and pat on parchment or greased plastic \u2014 do not roll."
+    ]
+  },
+  {
+    "recipe_id": "r_1181c4a7dd",
+    "recipe_name": "Low-Carb Chickpea Idli (Eggless & Vegetarian)",
+    "source_file": "C:\\lowcarb-recipe-chatbot\\backend\\data\\raw\\pdf\\ChickpeaIdli-lowcarb.pdf",
+    "tags": [
+      "eggless",
+      "low carb",
+      "protein"
+    ],
+    "bot_keywords": [
+      "1 tsp psyllium husk",
+      "1-inch ginger piece",
+      "1/2 cup dry chickpeas \u2014 soaked 8\u201310 hours and drained",
+      "1/4 tsp eno fruit salt or 1/8 tsp baking soda (added just before steaming)",
+      "2 tbsp fine almond flour",
+      "2 tbsp thick curd or greek yogurt",
+      "2\u20133 green chilies",
+      "and 1\u20132 tbsp water into a smooth thick batter.",
+      "chopped coriander leaves",
+      "coriander",
+      "eggless",
+      "ginger",
+      "grated carrot",
+      "grind chickpeas with green chilies",
+      "hing",
+      "low carb",
+      "low-carb chickpea idli (eggless & vegetarian)",
+      "mix in almond flour",
+      "optional spices: cumin",
+      "protein",
+      "psyllium husk",
+      "salt to taste",
+      "soak chickpeas overnight and drain well."
     ]
   },
   {
@@ -1124,6 +1404,72 @@
       "\u00bd tsp mustard seeds",
       "\u00bd tsp salt (or to taste)",
       "\u00bd\u2013\u00be tsp red chili powder (to taste)"
+    ]
+  },
+  {
+    "recipe_id": "r_ce1fb7eec7",
+    "recipe_name": "South Indian Low-Carb Nipattu",
+    "source_file": "C:\\lowcarb-recipe-chatbot\\backend\\data\\raw\\pdf\\Low_Carb_South_Indian_Nipattu.pdf",
+    "tags": [
+      "low carb",
+      "protein"
+    ],
+    "bot_keywords": [
+      "1 1/2 cups besan (chickpea flour)",
+      "1 tsp red chili powder",
+      "1/2 cup almond flour",
+      "1/2 cup raw peanuts",
+      "1/2 tsp asafoetida (hing)",
+      "1/2 tsp salt",
+      "1/2 tsp turmeric powder (optional)",
+      "1/4 cup ghee or melted coconut oil",
+      "1/4 to 1/3 cup water (adjust gradually)",
+      "2 tsp ajwain or cumin seeds",
+      "2 tsp sesame seeds",
+      "3\u20134 green chilies",
+      "4 tbsp coconut flour",
+      "almond flour",
+      "coarsely crushed",
+      "coconut flour",
+      "finely chopped (optional)",
+      "low carb",
+      "mix besan",
+      "protein",
+      "south indian low-carb nipattu",
+      "spices"
+    ]
+  },
+  {
+    "recipe_id": "r_1811015c27",
+    "recipe_name": "Pepper Vadai (Baked Lower-Carb Version)",
+    "source_file": "C:\\lowcarb-recipe-chatbot\\backend\\data\\raw\\pdf\\Pepper_Vadai_Recipe.pdf",
+    "tags": [
+      "low carb",
+      "protein",
+      "travel snacks"
+    ],
+    "bot_keywords": [
+      "and an optional almond flour addition to reduce overall carbs and improve crunch. this version is baked instead of deep fried and stores well. why this version works \u25cf whole urad/black gram gives authentic flavor and texture \u25cf sprouting (optional) may improve digestibility and flavor depth \u25cf almond flour helps reduce net carbs and creates a lighter crisp texture \u25cf chia seeds help bind the dough naturally without rice flour \u25cf double baking method helps achieve better crispness without frying main ingredients \u25cf 1 cup whole urad dal / whole black gram (with skin) \u25cf 1/2 cup almond flour (optional but recommended for lower-carb texture) \u25cf 2 tbsp chia seeds \u25cf 2 tbsp ghee \u25cf salt to taste spice mix \u25cf 2 tbsp whole black pepper \u25cf 1 tbsp cumin seeds \u25cf 1/4 tsp hing (asafoetida) optional flavor additions \u25cf 8\u201310 curry leaves",
+      "and an optional almond flour addition to reduce overall carbs and improve crunch. this version is baked instead of deep fried and stores well. why this version works \u25cf whole urad/black gram gives authentic flavor and texture \u25cf sprouting (optional) may improve digestibility and flavor depth \u25cf almond flour helps reduce net carbs and creates a lighter crisp texture \u25cf chia seeds help bind the dough naturally without rice flour \u25cf double baking \u25cf wash and soak the whole urad dal overnight (8\u201310 hours). \u25cf drain completely. \u25cf optional: sprout the dal for 12\u201324 hours for improved digestibility and lighter texture. \u25cf dry grind pepper",
+      "and hing into a coarse spice mix. \u25cf grind soaked dal with almond flour",
+      "and spice mix using minimal water. \u25cf the batter should remain thick and coarse. \u25cf mix in melted ghee and refrigerate for 30\u201360 minutes. shaping & baking \u25cf preheat oven to 160\u00b0c / 320\u00b0f. \u25cf shape batter into small flattened vadai shapes. \u25cf bake 8\u201310 minutes. \u25cf flip carefully and bake another 8\u201310 minutes. \u25cf reduce temperature to 120\u00b0c / 250\u00b0f. \u25cf bake another 15\u201325 minutes until crisp. \u25cf cool completely before storing. storage tips \u25cf store fully cooled vadai in an airtight container. \u25cf keeps 4\u20135 days at room temperature. \u25cf can be re-crisped in air fryer or oven. texture tweaks \u25cf for crispier vadai: flatten thinner and extend low-temp bake. \u25cf for softer texture: grind smoother and skip second bake. \u25cf if batter is wet: add almond flour or coconut flour. \u25cf if batter is dry: add water 1 tsp at a time. variations \u25cf air fryer version: 160\u00b0c for 12\u201315 min",
+      "chia seeds",
+      "cilantro",
+      "cumin",
+      "low carb",
+      "masala chai",
+      "or dill. \u25cf high protein version: add whey isolate or pea protein isolate. \u25cf traditional version: skip almond flour and chia seeds. approximate nutrition \u25cf per small vadai: \u25cf calories: ~70\u201390 \u25cf protein: ~3\u20134g \u25cf net carbs: ~3\u20135g \u25cf fat: ~5\u20136g serving suggestions \u25cf serve with coconut chutney",
+      "or rasam. \u25cf works well as travel snack or crunchy tea-time savory bite. pepper vadai (baked lower-carb version) a crisp",
+      "or sunflower seeds. \u25cf herb version: add curry leaves",
+      "pepper vadai (baked lower-carb version) a crisp",
+      "peppery south indian-style snack made with whole urad dal (black gram)",
+      "protein",
+      "pumpkin",
+      "salt",
+      "then 120\u00b0c for 5\u20138 min. \u25cf mixed seed version: add sesame",
+      "travel snacks",
+      "warming spices",
+      "yogurt"
     ]
   }
 ]
