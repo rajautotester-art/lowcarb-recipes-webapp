@@ -211,12 +211,18 @@ def split_ingredient_and_method_text(block: str, recipe_name: str) -> tuple[str,
     text = re.sub(re.escape(recipe_name), "", text, count=1, flags=re.IGNORECASE).strip()
 
     method_marker = re.search(
-        r"(?is)\b(instructions?|method|directions?|steps?|preparation)\b\s*:?",
+        r"(?im)^\s*(instructions?|method|directions?|steps?|preparation(?:\s+steps)?)\s*:?\s*$",
         text,
     )
     if method_marker:
         ingredients_part = text[: method_marker.start()]
         method_part = text[method_marker.end() :]
+        ingredient_heading = re.search(
+            r"(?im)^\s*(ingredients?|main ingredients|classic vegetarian version|vegan alternative version|base dough(?: ingredients)?|dry(?: mix)?|wet(?: / binding ingredients)?)\s*:?\s*$",
+            ingredients_part,
+        )
+        if ingredient_heading:
+            ingredients_part = ingredients_part[ingredient_heading.start() :]
         return ingredients_part.strip(), normalize_text(method_part)
 
     numbered_step = re.search(r"(?s)(?:^|\n)\s*1[\.\)]\s+", text)
@@ -274,7 +280,7 @@ def extract_ingredient_groups(value: str, recipe_name: str) -> list[dict[str, An
     text = normalize_extracted_text(value).replace("\x7f", "\n").replace("â– ", "\n").replace("â€¢", "\n")
     text = re.sub(re.escape(recipe_name), "", text, count=1, flags=re.IGNORECASE)
     heading_pattern = re.compile(
-        r"^(?:base dough(?: ingredients)?|dry(?: mix)?|wet(?: / binding ingredients)?|add-ins?(?: \\(after baking\\))?|cinnamon .*coating|variation\\s+\\d+\\s*:.+|classic onion akki rotti:?|carrot akki rotti:?|cabbage akki rotti:?|bottle gourd .*akki rotti:?|methi / dill akki rotti:?|onion & vegetable add-in variations.*|base technique.*)$",
+        r"^(?:main ingredients|spice mix|optional flavor additions|classic vegetarian version|vegan alternative version|flavor boosters|low-carb tweaks|base dough(?: ingredients)?|dry(?: mix)?|wet(?: / binding ingredients)?|add-ins?(?: \\(after baking\\))?|cinnamon .*coating|variation\\s+\\d+\\s*:.+|classic onion akki rotti:?|carrot akki rotti:?|cabbage akki rotti:?|bottle gourd .*akki rotti:?|methi / dill akki rotti:?|onion & vegetable add-in variations.*|base technique.*)$",
         re.IGNORECASE,
     )
     skip_pattern = re.compile(
@@ -332,7 +338,7 @@ def extract_steps(value: str) -> list[str]:
         return []
     value = normalize_extracted_text(value)
     value = re.split(r"\b(?:approximate\s+)?macros?\b|\bnutrition\b", value, maxsplit=1, flags=re.IGNORECASE)[0]
-    value = value.replace("\x7f", "\n")
+    value = value.replace("\x7f", "\n").replace("●", "\n")
     value = normalize_text(value.replace("\x7f", " ").replace("■", " "))
     heading_patterns = [
         r"buns?\s*/\s*rolls?",
@@ -389,7 +395,7 @@ def infer_tags(text: str) -> list[str]:
     lowered = text.lower()
     tags = []
     for tag, terms in KEYWORD_TAGS.items():
-        if any(term in lowered for term in terms):
+        if any(re.search(rf"(?<![a-z0-9]){re.escape(term)}(?![a-z0-9])", lowered) for term in terms):
             tags.append(tag)
     return sorted(set(tags))
 
@@ -412,7 +418,7 @@ def infer_category(tags: list[str], text: str) -> str:
         or ("south indian" in lowered and "nut" in lowered and "seed" in lowered)
     ):
         return "General"
-    if any(term in lowered for term in ["cookie", "cookies", "donut", "donuts", "barfi", "danish butter"]):
+    if any(term in lowered for term in ["cookie", "cookies", "donut", "donuts", "barfi", "danish butter", "cheesecake"]):
         return "Dessert"
     if any(term in lowered for term in ["toffee", "payasam", "biscotti"]):
         return "Dessert"
@@ -420,6 +426,8 @@ def infer_category(tags: list[str], text: str) -> str:
         return "Bread"
     if "cake" in tags:
         return "Dessert"
+    if any(re.search(rf"(?<![a-z0-9]){re.escape(term)}(?![a-z0-9])", lowered) for term in ["sauce", "chutney", "dip", "dips", "masala", "podi"]):
+        return "General"
     if "travel snacks" in tags:
         return "Travel"
     if "bread" in tags:
