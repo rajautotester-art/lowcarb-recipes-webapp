@@ -315,6 +315,24 @@ function App() {
     pushAppHistory({ view: 'index', selectedRecipeId: null, resultRecipeIds: [] })
   }
 
+  function goHome() {
+    setRecipes([])
+    setSelectedRecipe(null)
+    setError('')
+    setActiveMobileView('index')
+    pushAppHistory({ view: 'index', selectedRecipeId: null, resultRecipeIds: [] })
+  }
+
+  function goToMatches() {
+    setSelectedRecipe(null)
+    setActiveMobileView('matches')
+    pushAppHistory({
+      view: 'matches',
+      selectedRecipeId: null,
+      resultRecipeIds: recipesRef.current.map((recipe) => recipe.recipe_id),
+    })
+  }
+
   function changeMobileView(view) {
     setActiveMobileView(view)
     pushAppHistory({ view })
@@ -457,6 +475,17 @@ function App() {
       <section className="detail-panel">
         <RecipeDetail recipe={selectedRecipe} />
       </section>
+
+      <nav className="mobile-bottom-actions" aria-label="Mobile navigation shortcuts">
+        {activeMobileView === 'detail' && recipes.length > 1 && (
+          <button className="mobile-secondary-action" onClick={goToMatches} type="button">
+            Matches
+          </button>
+        )}
+        <button className="mobile-home-action" onClick={goHome} type="button">
+          Home
+        </button>
+      </nav>
     </main>
   )
 }

@@ -35,6 +35,10 @@ button {
   display: none;
 }
 
+.mobile-bottom-actions {
+  display: none;
+}
+
 .chat-panel,
 .results-panel,
 .detail-panel {
@@ -555,10 +559,11 @@ h4 {
 
   .chat-form {
     position: sticky;
-    bottom: 0;
+    bottom: 76px;
     grid-template-columns: 1fr;
     padding: 12px;
     background: #fffdf8;
+    box-shadow: 0 -8px 18px rgba(55, 48, 33, 0.08);
   }
 
   .chat-form input,
@@ -568,11 +573,11 @@ h4 {
   }
 
   .results-panel {
-    padding: 14px;
+    padding: 14px 14px 92px;
   }
 
   .recipe-detail {
-    padding: 18px 16px 28px;
+    padding: 18px 16px 104px;
   }
 
   .detail-heading {
@@ -587,5 +592,40 @@ h4 {
   .ingredient-row {
     grid-template-columns: 1fr;
     gap: 3px;
+  }
+
+  .mobile-bottom-actions {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 20;
+    display: flex;
+    gap: 10px;
+    padding: 10px 12px calc(10px + env(safe-area-inset-bottom));
+    background: rgba(255, 253, 248, 0.96);
+    border-top: 1px solid #ddd7c8;
+    box-shadow: 0 -10px 24px rgba(55, 48, 33, 0.12);
+    backdrop-filter: blur(10px);
+  }
+
+  .mobile-bottom-actions button {
+    min-height: 48px;
+    border-radius: 7px;
+    font-weight: 850;
+  }
+
+  .mobile-home-action {
+    flex: 1;
+    color: #ffffff;
+    background: #2f6b57;
+    border: 1px solid #2f6b57;
+  }
+
+  .mobile-secondary-action {
+    flex: 0 0 42%;
+    color: #2f6b57;
+    background: #eef4e7;
+    border: 1px solid #c9d8bf;
   }
 }
