@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useState } from 'react'
+import React, { useEffect, useMemo, useRef, useState } from 'react'
 import { createRoot } from 'react-dom/client'
 import './styles.css'
 
@@ -187,6 +187,76 @@ function App() {
   const [isLoading, setIsLoading] = useState(false)
   const [error, setError] = useState('')
   const [activeMobileView, setActiveMobileView] = useState('index')
+  const allRecipesRef = useRef([])
+  const recipesRef = useRef([])
+  const selectedRecipeRef = useRef(null)
+  const activeMobileViewRef = useRef('index')
+
+  useEffect(() => {
+    allRecipesRef.current = allRecipes
+  }, [allRecipes])
+
+  useEffect(() => {
+    recipesRef.current = recipes
+  }, [recipes])
+
+  useEffect(() => {
+    selectedRecipeRef.current = selectedRecipe
+  }, [selectedRecipe])
+
+  useEffect(() => {
+    activeMobileViewRef.current = activeMobileView
+  }, [activeMobileView])
+
+  function recipesByIds(recipeIds = []) {
+    const recipeMap = new Map(allRecipesRef.current.map((recipe) => [recipe.recipe_id, recipe]))
+    return recipeIds.map((recipeId) => recipeMap.get(recipeId)).filter(Boolean)
+  }
+
+  function recipeById(recipeId, fallbackRecipes = []) {
+    if (!recipeId) return null
+    return (
+      fallbackRecipes.find((recipe) => recipe.recipe_id === recipeId) ||
+      allRecipesRef.current.find((recipe) => recipe.recipe_id === recipeId) ||
+      null
+    )
+  }
+
+  function currentHistoryState(overrides = {}) {
+    return {
+      app: 'lowcarb-recipe-chatbot',
+      view: activeMobileViewRef.current,
+      selectedRecipeId: selectedRecipeRef.current?.recipe_id || null,
+      resultRecipeIds: recipesRef.current.map((recipe) => recipe.recipe_id),
+      ...overrides,
+    }
+  }
+
+  function pushAppHistory(overrides = {}) {
+    window.history.pushState(currentHistoryState(overrides), '', window.location.href)
+  }
+
+  function applyHistoryState(state) {
+    if (!state || state.app !== 'lowcarb-recipe-chatbot') return
+    const nextRecipes = recipesByIds(state.resultRecipeIds || [])
+    const nextSelectedRecipe = recipeById(state.selectedRecipeId, nextRecipes)
+
+    setRecipes(nextRecipes)
+    setSelectedRecipe(nextSelectedRecipe)
+    setActiveMobileView(state.view || 'index')
+    setError('')
+  }
+
+  useEffect(() => {
+    window.history.replaceState(currentHistoryState({ view: 'index' }), '', window.location.href)
+
+    function handlePopState(event) {
+      applyHistoryState(event.state)
+    }
+
+    window.addEventListener('popstate', handlePopState)
+    return () => window.removeEventListener('popstate', handlePopState)
+  }, [])
 
   useEffect(() => {
     async function loadRecipeIndex() {
@@ -210,17 +280,33 @@ function App() {
     setSelectedRecipe(null)
     setError('')
     setActiveMobileView('index')
+    pushAppHistory({ view: 'index', selectedRecipeId: null, resultRecipeIds: [] })
+  }
+
+  function changeMobileView(view) {
+    setActiveMobileView(view)
+    pushAppHistory({ view })
   }
 
   function selectRecipe(recipe) {
     setSelectedRecipe(recipe)
     setRecipes([recipe])
     setActiveMobileView('detail')
+    pushAppHistory({
+      view: 'detail',
+      selectedRecipeId: recipe.recipe_id,
+      resultRecipeIds: [recipe.recipe_id],
+    })
   }
 
   function selectSearchResult(recipe) {
     setSelectedRecipe(recipe)
     setActiveMobileView('detail')
+    pushAppHistory({
+      view: 'detail',
+      selectedRecipeId: recipe.recipe_id,
+      resultRecipeIds: recipesRef.current.map((result) => result.recipe_id),
+    })
   }
 
   async function sendMessage(event) {
@@ -248,13 +334,21 @@ function App() {
 
       const data = await response.json()
       const nextRecipes = data.recipes || []
+      const nextSelectedRecipe = nextRecipes.length === 1 ? nextRecipes[0] : null
+      const nextView = nextRecipes.length === 1 ? 'detail' : 'matches'
       setMessages((current) => [...current, { role: 'assistant', content: data.reply }])
       setRecipes(nextRecipes)
-      setSelectedRecipe(nextRecipes.length === 1 ? nextRecipes[0] : null)
-      setActiveMobileView(nextRecipes.length === 1 ? 'detail' : 'matches')
+      setSelectedRecipe(nextSelectedRecipe)
+      setActiveMobileView(nextView)
+      pushAppHistory({
+        view: nextView,
+        selectedRecipeId: nextSelectedRecipe?.recipe_id || null,
+        resultRecipeIds: nextRecipes.map((recipe) => recipe.recipe_id),
+      })
     } catch (err) {
       setError(`Could not reach the recipe API. ${err.message}`)
       setActiveMobileView('chat')
+      pushAppHistory({ view: 'chat', selectedRecipeId: null, resultRecipeIds: [] })
     } finally {
       setIsLoading(false)
     }
@@ -272,7 +366,7 @@ function App() {
           <button
             className={activeMobileView === view ? 'is-active' : ''}
             key={view}
-            onClick={() => setActiveMobileView(view)}
+            onClick={() => changeMobileView(view)}
             type="button"
           >
             {label}
