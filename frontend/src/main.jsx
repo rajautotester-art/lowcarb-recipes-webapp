@@ -232,8 +232,27 @@ function App() {
     }
   }
 
+  function hashForState(state) {
+    const params = new URLSearchParams()
+    params.set('view', state.view || 'index')
+    if (state.selectedRecipeId) params.set('recipe', state.selectedRecipeId)
+    if (state.resultRecipeIds?.length) params.set('results', state.resultRecipeIds.join(','))
+    return `#${params.toString()}`
+  }
+
+  function stateFromHash() {
+    const params = new URLSearchParams(window.location.hash.replace(/^#/, ''))
+    return {
+      app: 'lowcarb-recipe-chatbot',
+      view: params.get('view') || 'index',
+      selectedRecipeId: params.get('recipe') || null,
+      resultRecipeIds: (params.get('results') || '').split(',').filter(Boolean),
+    }
+  }
+
   function pushAppHistory(overrides = {}) {
-    window.history.pushState(currentHistoryState(overrides), '', window.location.href)
+    const state = currentHistoryState(overrides)
+    window.history.pushState(state, '', hashForState(state))
   }
 
   function applyHistoryState(state) {
@@ -248,14 +267,23 @@ function App() {
   }
 
   useEffect(() => {
-    window.history.replaceState(currentHistoryState({ view: 'index' }), '', window.location.href)
+    const initialState = window.location.hash ? stateFromHash() : currentHistoryState({ view: 'index' })
+    window.history.replaceState(initialState, '', hashForState(initialState))
 
     function handlePopState(event) {
-      applyHistoryState(event.state)
+      applyHistoryState(event.state || stateFromHash())
+    }
+
+    function handleHashChange() {
+      applyHistoryState(stateFromHash())
     }
 
     window.addEventListener('popstate', handlePopState)
-    return () => window.removeEventListener('popstate', handlePopState)
+    window.addEventListener('hashchange', handleHashChange)
+    return () => {
+      window.removeEventListener('popstate', handlePopState)
+      window.removeEventListener('hashchange', handleHashChange)
+    }
   }, [])
 
   useEffect(() => {
@@ -265,6 +293,10 @@ function App() {
         if (!response.ok) throw new Error(`Backend returned ${response.status}`)
         const data = await response.json()
         setAllRecipes(data)
+        allRecipesRef.current = data
+        if (window.location.hash) {
+          applyHistoryState(stateFromHash())
+        }
       } catch (err) {
         setError(`Could not load recipe index. ${err.message}`)
       }
