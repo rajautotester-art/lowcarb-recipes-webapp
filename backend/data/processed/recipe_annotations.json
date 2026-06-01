@@ -1600,5 +1600,420 @@
       "south indian low-carb nipattu",
       "spices"
     ]
+  },
+  {
+    "recipe_id": "r_01113226d2",
+    "recipe_name": "Apple Cheddar Crunch Salad",
+    "source_file": "C:\\lowcarb-recipe-chatbot\\backend\\data\\raw\\pdf\\AppleCheddarCrunchSalad.pdf",
+    "tags": [
+      "protein"
+    ],
+    "bot_keywords": [
+      "1 celery stalk",
+      "1/4 apple",
+      "1/4 cup pecans fruit accent",
+      "2 cups cabbage",
+      "2 cups lettuce",
+      "60g cheddar",
+      "apple cheddar crunch salad greens & vegetables 2 cups lettuce 2 cups cabbage 1 celery stalk cucumber slices protein & texture 60g cheddar 1/4 cup pecans fruit accent 1/4 apple",
+      "cheddar and nuts. toss with yogurt dressing. (approx per bowl) apple cheddar crunch salad greens & vegetables",
+      "cheddar and nuts. toss with yogurt dressing. macros (approx per bowl) approx per bowl: 340 kcal | protein 13g | net carbs 10g | fat 28g",
+      "cucumber slices protein & texture",
+      "greek yogurt",
+      "lemon juice method mix vegetables and greens. add apple slices",
+      "mustard",
+      "protein",
+      "thinly sliced dressing",
+      "thinly sliced dressing greek yogurt mustard lemon juice mix vegetables and greens. add apple slices"
+    ]
+  },
+  {
+    "recipe_id": "r_4475f992e0",
+    "recipe_name": "Asian Crunch Salad",
+    "source_file": "C:\\lowcarb-recipe-chatbot\\backend\\data\\raw\\pdf\\AsianCrunchSalad.pdf",
+    "tags": [
+      "protein"
+    ],
+    "bot_keywords": [
+      "1 capsicum",
+      "1 cucumber",
+      "1 cup purple cabbage",
+      "1 tbsp peanut butter",
+      "150g tofu or 1/2 cup edamame",
+      "2 cups cabbage",
+      "asian crunch salad greens & vegetables 2 cups cabbage 1 cup purple cabbage 1 capsicum 1 cucumber spring onion protein & texture 150g tofu or 1/2 cup edamame sesame seeds crushed peanuts fruit accent optional: few mandarin orange segments dressing 1 tbsp peanut butter soy sauce ginger rice vinegar combine vegetables and protein. mix dressing separately and toss into salad before serving. (approx per bowl) asian crunch salad greens & vegetables",
+      "crushed peanuts fruit accent",
+      "ginger",
+      "optional: few mandarin orange segments dressing",
+      "protein",
+      "rice vinegar method combine vegetables and protein. mix dressing separately and toss into salad before serving. macros (approx per bowl) approx per bowl: 320 kcal | protein 15g | net carbs 12g | fat 24g",
+      "sesame seeds",
+      "soy sauce",
+      "spring onion protein & texture"
+    ]
+  },
+  {
+    "recipe_id": "r_44064066a7",
+    "recipe_name": "Berry Yogurt Protein Salad",
+    "source_file": "C:\\lowcarb-recipe-chatbot\\backend\\data\\raw\\pdf\\BerryGreekYogurtSalad.pdf",
+    "tags": [
+      "protein"
+    ],
+    "bot_keywords": [
+      "1 medium cucumber",
+      "1 tbsp chia seeds fruit accent",
+      "1 tsp lemon juice",
+      "1/2 cup greek yogurt",
+      "1/3 cup mixed berries (strawberries",
+      "1/4 tsp vanilla extract",
+      "2 cups mixed greens",
+      "2 cups spinach",
+      "2 tbsp almond slivers",
+      "2 tbsp hemp hearts",
+      "3 tbsp greek yogurt",
+      "berry yogurt protein salad greens & vegetables 2 cups spinach 2 cups mixed greens 1 medium cucumber",
+      "blackberries or blueberries) lemon vanilla yogurt dressing",
+      "blackberries or blueberries) lemon vanilla yogurt dressing 3 tbsp greek yogurt 1 tsp lemon juice 1/4 tsp vanilla extract tiny pinch cinnamon optional pinch sweetener 1. arrange spinach",
+      "chia seeds and almond slivers. 4. whisk dressing ingredients until creamy. 5. spoon dressing over salad before serving. approx macros (per bowl) calories: ~310 protein: ~17g net carbs: ~9\u201310g fat: ~21g berry yogurt protein salad greens & vegetables",
+      "greens and cucumber in 2 bowls. 2. add berries evenly across both bowls. 3. sprinkle hemp hearts",
+      "protein",
+      "raspberries",
+      "sliced protein & texture",
+      "sliced protein & texture 1/2 cup greek yogurt 2 tbsp hemp hearts 2 tbsp almond slivers 1 tbsp chia seeds fruit accent 1/3 cup mixed berries (strawberries"
+    ]
+  },
+  {
+    "recipe_id": "r_71fbb193e0",
+    "recipe_name": "Blueberry Feta Crunch Salad",
+    "source_file": "C:\\lowcarb-recipe-chatbot\\backend\\data\\raw\\pdf\\BlueberryFetaCrunchSalad.pdf",
+    "tags": [
+      "protein"
+    ],
+    "bot_keywords": [
+      "1 cucumber",
+      "1 cup cabbage",
+      "1/3 cup blueberries dressing",
+      "1/4 cup walnuts fruit accent",
+      "3 cups spinach",
+      "50g feta",
+      "blueberry feta crunch salad greens & vegetables 3 cups spinach 1 cucumber 1 cup cabbage radish slices protein & texture 50g feta 1/4 cup walnuts fruit accent 1/3 cup blueberries dressing olive oil lemon juice dijon mustard combine greens and vegetables. add blueberries",
+      "dijon mustard method combine greens and vegetables. add blueberries",
+      "feta and walnuts. toss with dressing. (approx per bowl) blueberry feta crunch salad greens & vegetables",
+      "feta and walnuts. toss with dressing. macros (approx per bowl) approx per bowl: 310 kcal | protein 9g | net carbs 11g | fat 25g",
+      "lemon juice",
+      "olive oil",
+      "protein",
+      "radish slices protein & texture"
+    ]
+  },
+  {
+    "recipe_id": "r_7599033f00",
+    "recipe_name": "Creamy Herb Salad",
+    "source_file": "C:\\lowcarb-recipe-chatbot\\backend\\data\\raw\\pdf\\CreamyHerbySalad.pdf",
+    "tags": [
+      "indian",
+      "protein"
+    ],
+    "bot_keywords": [
+      "1 celery stalk",
+      "1 cucumber",
+      "1 tbsp hemp hearts fruit accent",
+      "150g paneer or tofu",
+      "2 tbsp sunflower seeds",
+      "3 cups lettuce",
+      "4 tbsp greek yogurt",
+      "coriander",
+      "creamy herb salad greens & vegetables 3 cups lettuce 1 cucumber 1 celery stalk fresh herbs protein & texture 150g paneer or tofu 2 tbsp sunflower seeds 1 tbsp hemp hearts fruit accent optional: few strawberries dressing 4 tbsp greek yogurt mint coriander pepper lemon arrange vegetables in bowls. add protein and seeds. spoon yogurt herb dressing over salad. (approx per bowl) creamy herb salad greens & vegetables",
+      "fresh herbs protein & texture",
+      "indian",
+      "lemon method arrange vegetables in bowls. add protein and seeds. spoon yogurt herb dressing over salad. macros (approx per bowl) approx per bowl: 340 kcal | protein 18g | net carbs 9g | fat 26g",
+      "mint",
+      "optional: few strawberries dressing",
+      "pepper",
+      "protein"
+    ]
+  },
+  {
+    "recipe_id": "r_d5cac1bd33",
+    "recipe_name": "High Protein Power Salad",
+    "source_file": "C:\\lowcarb-recipe-chatbot\\backend\\data\\raw\\pdf\\HighProteinSalad.pdf",
+    "tags": [
+      "indian",
+      "protein"
+    ],
+    "bot_keywords": [
+      "1 cucumber",
+      "1 cup purple cabbage protein & texture",
+      "1/2 cup edamame",
+      "100g paneer or tofu",
+      "3 cups mixed greens",
+      "almond slivers fruit accent",
+      "high protein power salad greens & vegetables 3 cups mixed greens 1 cucumber radish slices 1 cup purple cabbage protein & texture 1/2 cup edamame 100g paneer or tofu mixed seeds almond slivers fruit accent small handful berries optional dressing tahini lemon juice pepper layer vegetables and greens. add proteins and seeds. drizzle tahini dressing before serving. (approx per bowl) high protein power salad greens & vegetables",
+      "indian",
+      "lemon juice",
+      "mixed seeds",
+      "pepper method layer vegetables and greens. add proteins and seeds. drizzle tahini dressing before serving. macros (approx per bowl) approx per bowl: 370 kcal | protein 20g | net carbs 10g | fat 29g",
+      "protein",
+      "radish slices",
+      "small handful berries optional dressing",
+      "tahini"
+    ]
+  },
+  {
+    "recipe_id": "r_5d53ad2057",
+    "recipe_name": "Indian Chaat Protein Salad",
+    "source_file": "C:\\lowcarb-recipe-chatbot\\backend\\data\\raw\\pdf\\ChaatInspiredSalad.pdf",
+    "tags": [
+      "indian",
+      "protein"
+    ],
+    "bot_keywords": [
+      "1 cucumber",
+      "1/4 onion",
+      "2 tbsp peanuts fruit accent",
+      "2 tbsp pomegranate dressing",
+      "2 tomatoes",
+      "3/4 cup kala chana or sprouts",
+      "chaat masala",
+      "coriander protein & texture",
+      "greek yogurt",
+      "indian",
+      "indian chaat protein salad greens & vegetables 1 cucumber 2 tomatoes 1/4 onion coriander protein & texture 3/4 cup kala chana or sprouts 2 tbsp peanuts fruit accent 2 tbsp pomegranate dressing greek yogurt mint chutney chaat masala roasted jeera mix vegetables and protein. add dressing and toss lightly. top with pomegranate. (approx per bowl) indian chaat protein salad greens & vegetables",
+      "mint chutney",
+      "protein",
+      "roasted jeera method mix vegetables and protein. add dressing and toss lightly. top with pomegranate. macros (approx per bowl) approx per bowl: 280 kcal | protein 11g | net carbs 14g | fat 16g"
+    ]
+  },
+  {
+    "recipe_id": "r_a217dc5b0b",
+    "recipe_name": "Kosambari Inspired Salad",
+    "source_file": "C:\\lowcarb-recipe-chatbot\\backend\\data\\raw\\pdf\\KosambariInspiredSalad.pdf",
+    "tags": [
+      "indian",
+      "protein"
+    ],
+    "bot_keywords": [
+      "1 cucumber",
+      "1 small carrot",
+      "1 tbsp lemon juice",
+      "1 tomato",
+      "1/2 cup soaked moong dal or edamame",
+      "2 tbsp coconut fruit accent",
+      "2 tbsp roasted peanuts",
+      "coriander",
+      "curry leaves protein & texture",
+      "diced",
+      "diced 1 small carrot",
+      "grated",
+      "grated 1 tomato coriander curry leaves protein & texture 1/2 cup soaked moong dal or edamame 2 tbsp roasted peanuts 2 tbsp coconut fruit accent optional: 2 tbsp pomegranate dressing 1 tbsp lemon juice pinch hing salt tempered mustard seeds mix vegetables and soaked dal. add coconut and peanuts. pour tempered dressing and toss gently. (approx per bowl) kosambari inspired salad greens & vegetables",
+      "indian",
+      "kosambari inspired salad greens & vegetables 1 cucumber",
+      "optional: 2 tbsp pomegranate dressing",
+      "pinch hing",
+      "protein",
+      "salt",
+      "tempered mustard seeds method mix vegetables and soaked dal. add coconut and peanuts. pour tempered dressing and toss gently. macros (approx per bowl) approx per bowl: 240 kcal | protein 10g | net carbs 11g | fat 14g"
+    ]
+  },
+  {
+    "recipe_id": "r_60d41336fb",
+    "recipe_name": "Mediterranean Bowl",
+    "source_file": "C:\\lowcarb-recipe-chatbot\\backend\\data\\raw\\pdf\\MediterraneanSalad.pdf",
+    "tags": [
+      "indian",
+      "protein"
+    ],
+    "bot_keywords": [
+      "1 cucumber",
+      "1 cup cherry tomatoes",
+      "1 tbsp olive oil",
+      "150g paneer or 1/2 cup chickpeas",
+      "2 tbsp feta",
+      "2 tbsp pumpkin seeds fruit accent",
+      "3 cups lettuce",
+      "black pepper method layer greens and vegetables. add paneer",
+      "feta and seeds. drizzle dressing before serving. (approx per bowl) mediterranean bowl greens & vegetables",
+      "feta and seeds. drizzle dressing before serving. macros (approx per bowl) approx per bowl: 360 kcal | protein 18g | net carbs 10g | fat 28g",
+      "indian",
+      "lemon juice",
+      "mediterranean bowl greens & vegetables 3 cups lettuce 1 cucumber 1 cup cherry tomatoes olives protein & texture 150g paneer or 1/2 cup chickpeas 2 tbsp feta 2 tbsp pumpkin seeds fruit accent optional: few berries for garnish dressing 1 tbsp olive oil lemon juice oregano black pepper layer greens and vegetables. add paneer",
+      "olives protein & texture",
+      "optional: few berries for garnish dressing",
+      "oregano",
+      "protein"
+    ]
+  },
+  {
+    "recipe_id": "r_9857524ec0",
+    "recipe_name": "Orange Paneer Herb Salad",
+    "source_file": "C:\\lowcarb-recipe-chatbot\\backend\\data\\raw\\pdf\\OrangePaneerHerbSalad.pdf",
+    "tags": [
+      "indian",
+      "protein"
+    ],
+    "bot_keywords": [
+      "1 cucumber",
+      "1 small orange",
+      "150g paneer",
+      "3 cups mixed greens",
+      "indian",
+      "lime juice",
+      "mint leaves protein & texture",
+      "olive oil",
+      "orange paneer herb salad greens & vegetables 3 cups mixed greens 1 cucumber mint leaves protein & texture 150g paneer pumpkin seeds fruit accent 1 small orange",
+      "protein",
+      "pumpkin seeds fruit accent",
+      "roasted cumin powder method layer greens and vegetables. add paneer and orange segments. toss lightly with dressing. macros (approx per bowl) approx per bowl: 370 kcal | protein 18g | net carbs 12g | fat 28g",
+      "segmented dressing",
+      "segmented dressing olive oil lime juice roasted cumin powder layer greens and vegetables. add paneer and orange segments. toss lightly with dressing. (approx per bowl) orange paneer herb salad greens & vegetables"
+    ]
+  },
+  {
+    "recipe_id": "r_a6043caf3c",
+    "recipe_name": "Peach Mozzarella Summer Salad",
+    "source_file": "C:\\lowcarb-recipe-chatbot\\backend\\data\\raw\\pdf\\PeachMozzarellaSummerSalad.pdf",
+    "tags": [
+      "protein"
+    ],
+    "bot_keywords": [
+      "1 cucumber",
+      "1 small peach or nectarine dressing",
+      "100g fresh mozzarella",
+      "2 tbsp toasted almonds fruit accent",
+      "3 cups arugula",
+      "basil leaves protein & texture",
+      "black pepper method arrange greens and vegetables. add peach slices and mozzarella. top with almonds and basil. macros (approx per bowl) approx per bowl: 320 kcal | protein 12g | net carbs 11g | fat 24g",
+      "lemon juice",
+      "olive oil",
+      "peach mozzarella summer salad greens & vegetables 3 cups arugula 1 cucumber thin fennel slices basil leaves protein & texture 100g fresh mozzarella 2 tbsp toasted almonds fruit accent 1 small peach or nectarine dressing olive oil lemon juice black pepper arrange greens and vegetables. add peach slices and mozzarella. top with almonds and basil. (approx per bowl) peach mozzarella summer salad greens & vegetables",
+      "protein",
+      "thin fennel slices"
+    ]
+  },
+  {
+    "recipe_id": "r_4ae86bc104",
+    "recipe_name": "Pear Walnut Goat Cheese Salad",
+    "source_file": "C:\\lowcarb-recipe-chatbot\\backend\\data\\raw\\pdf\\PearWalnutSalad.pdf",
+    "tags": [
+      "protein"
+    ],
+    "bot_keywords": [
+      "1 celery stalk",
+      "1 cucumber",
+      "1 tbsp lemon juice",
+      "1 tbsp olive oil",
+      "1 tsp dijon mustard method layer greens and vegetables. add pear slices",
+      "1/2 cup purple cabbage protein & texture",
+      "1/4 cup walnuts fruit accent",
+      "1/4 pear",
+      "3 cups spring mix or romaine",
+      "60g goat cheese",
+      "goat cheese and walnuts. drizzle dressing before serving. (approx per bowl) pear walnut goat cheese salad greens & vegetables",
+      "goat cheese and walnuts. drizzle dressing before serving. macros (approx per bowl) approx per bowl: 320 kcal | protein 10g | net carbs 9g | fat 26g",
+      "pear walnut goat cheese salad greens & vegetables 3 cups spring mix or romaine 1 cucumber 1 celery stalk 1/2 cup purple cabbage protein & texture 60g goat cheese 1/4 cup walnuts fruit accent 1/4 pear",
+      "protein",
+      "thinly sliced dressing",
+      "thinly sliced dressing 1 tbsp olive oil 1 tbsp lemon juice 1 tsp dijon mustard layer greens and vegetables. add pear slices"
+    ]
+  },
+  {
+    "recipe_id": "r_02a06084ca",
+    "recipe_name": "Pomegranate Kosambari Salad",
+    "source_file": "C:\\lowcarb-recipe-chatbot\\backend\\data\\raw\\pdf\\PomegranateKosambariSalad.pdf",
+    "tags": [
+      "indian",
+      "protein"
+    ],
+    "bot_keywords": [
+      "1 tomato",
+      "1/2 cup soaked moong dal",
+      "2 cups cucumber",
+      "2 tbsp coconut fruit accent",
+      "2 tbsp peanuts",
+      "2 tbsp pomegranate dressing",
+      "coriander",
+      "curry leaves protein & texture",
+      "hing",
+      "indian",
+      "lemon juice",
+      "pomegranate kosambari salad greens & vegetables 2 cups cucumber 1 tomato coriander curry leaves protein & texture 1/2 cup soaked moong dal 2 tbsp peanuts 2 tbsp coconut fruit accent 2 tbsp pomegranate dressing lemon juice hing tempered mustard seeds combine vegetables and sprouts. add coconut and peanuts. top with pomegranate and dressing. (approx per bowl) pomegranate kosambari salad greens & vegetables",
+      "protein",
+      "tempered mustard seeds method combine vegetables and sprouts. add coconut and peanuts. top with pomegranate and dressing. macros (approx per bowl) approx per bowl: 250 kcal | protein 9g | net carbs 12g | fat 16g"
+    ]
+  },
+  {
+    "recipe_id": "r_fecdfd621a",
+    "recipe_name": "Strawberry Mozzarella Basil Salad",
+    "source_file": "C:\\lowcarb-recipe-chatbot\\backend\\data\\raw\\pdf\\StrawberryMozzarellaSalad.pdf",
+    "tags": [
+      "protein"
+    ],
+    "bot_keywords": [
+      "1 cucumber",
+      "1 cup cherry tomatoes",
+      "100g fresh mozzarella",
+      "2 tbsp pumpkin seeds fruit accent",
+      "3 cups mixed greens",
+      "5 strawberries",
+      "balsamic vinegar",
+      "fresh basil protein & texture",
+      "olive oil",
+      "pepper method arrange greens and vegetables. add mozzarella and strawberries. top with basil and pumpkin seeds. macros (approx per bowl) approx per bowl: 300 kcal | protein 13g | net carbs 10g | fat 22g",
+      "protein",
+      "sliced dressing",
+      "sliced dressing olive oil balsamic vinegar pepper arrange greens and vegetables. add mozzarella and strawberries. top with basil and pumpkin seeds. (approx per bowl) strawberry mozzarella basil salad greens & vegetables",
+      "strawberry mozzarella basil salad greens & vegetables 3 cups mixed greens 1 cucumber 1 cup cherry tomatoes fresh basil protein & texture 100g fresh mozzarella 2 tbsp pumpkin seeds fruit accent 5 strawberries"
+    ]
+  },
+  {
+    "recipe_id": "r_ac97458438",
+    "recipe_name": "Warm Roasted Vegetable Salad",
+    "source_file": "C:\\lowcarb-recipe-chatbot\\backend\\data\\raw\\pdf\\RoastedVeggieSalad.pdf",
+    "tags": [
+      "indian",
+      "low carb",
+      "protein"
+    ],
+    "bot_keywords": [
+      "1 bell pepper",
+      "1 cup mushrooms protein & texture",
+      "1 zucchini",
+      "150g paneer or tofu",
+      "2 cups cauliflower",
+      "2 tbsp pumpkin seeds fruit accent",
+      "indian",
+      "lemon juice",
+      "low carb",
+      "olive oil",
+      "optional: few peach slices dressing",
+      "protein",
+      "smoked paprika",
+      "tahini method roast vegetables until lightly browned. add paneer and seeds. toss with warm dressing. macros (approx per bowl) approx per bowl: 360 kcal | protein 18g | net carbs 11g | fat 28g",
+      "warm roasted vegetable salad greens & vegetables 2 cups cauliflower 1 zucchini 1 bell pepper 1 cup mushrooms protein & texture 150g paneer or tofu 2 tbsp pumpkin seeds fruit accent optional: few peach slices dressing olive oil smoked paprika lemon juice tahini roast vegetables until lightly browned. add paneer and seeds. toss with warm dressing. (approx per bowl) warm roasted vegetable salad greens & vegetables"
+    ]
+  },
+  {
+    "recipe_id": "r_7aaec37a7a",
+    "recipe_name": "Watermelon Mint Paneer Salad",
+    "source_file": "C:\\lowcarb-recipe-chatbot\\backend\\data\\raw\\pdf\\WatermelonMintPaneerSalad.pdf",
+    "tags": [
+      "indian",
+      "protein"
+    ],
+    "bot_keywords": [
+      "1 cucumber",
+      "150g grilled paneer",
+      "2 tbsp pumpkin seeds fruit accent",
+      "3 cups lettuce",
+      "3/4 cup watermelon cubes dressing",
+      "chaat masala method layer greens and vegetables. add paneer and watermelon. sprinkle mint and seeds. add dressing. macros (approx per bowl) approx per bowl: 360 kcal | protein 18g | net carbs 10g | fat 27g",
+      "indian",
+      "lime juice",
+      "mint leaves protein & texture",
+      "pepper",
+      "protein",
+      "radish slices",
+      "watermelon mint paneer salad greens & vegetables 3 cups lettuce 1 cucumber radish slices mint leaves protein & texture 150g grilled paneer 2 tbsp pumpkin seeds fruit accent 3/4 cup watermelon cubes dressing lime juice pepper chaat masala layer greens and vegetables. add paneer and watermelon. sprinkle mint and seeds. add dressing. (approx per bowl) watermelon mint paneer salad greens & vegetables"
+    ]
   }
 ]

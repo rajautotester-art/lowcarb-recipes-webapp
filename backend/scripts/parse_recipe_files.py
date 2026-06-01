@@ -462,6 +462,8 @@ def infer_category(tags: list[str], text: str) -> str:
         return "Bread"
     if "cake" in tags:
         return "Dessert"
+    if any(term in lowered for term in ["salad", "kosambari", "bowl"]):
+        return "Salad"
     if any(re.search(rf"(?<![a-z0-9]){re.escape(term)}(?![a-z0-9])", lowered) for term in ["sauce", "chutney", "dip", "dips", "masala", "podi"]):
         return "General"
     if "travel snacks" in tags:
